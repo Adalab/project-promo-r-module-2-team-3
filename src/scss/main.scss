@@ -1,9 +1,25 @@
-/*@import 'core/variables';*/
 @import 'core/reset';
+@import 'core/variables';
+@import 'core/functions';
 /*@import 'components/code';
 @import 'components/links';
-@import 'layout/page';
 @import 'layout/header';
 @import 'layout/footer';
-@import 'pages/index';
+/*@import 'pages/index';
 */
+
+*{
+    box-sizing: border-box;
+    font-family: $font-Open;
+}
+
+
+.mainCreate{
+    @media all and (min-width: 768px){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &__card{
+        order: 1;
+    }
+    }
+}
