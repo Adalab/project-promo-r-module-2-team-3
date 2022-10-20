@@ -11,6 +11,9 @@
         font-weight: 700;
         color: $text;
     }
+    @media all and (min-width: 768px){
+        margin: 10px 30px 10px 40px;
+    }
 }
 
 .fill{
@@ -32,5 +35,8 @@
         border-style: solid;
         border-width: 1px;
         height: 30px;
+    }
+    @media all and (min-width: 768px){
+        margin: 10px 30px 10px 40px;
     }
 }
