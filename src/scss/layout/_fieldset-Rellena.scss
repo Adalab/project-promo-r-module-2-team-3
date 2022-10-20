@@ -1,3 +1,18 @@
+.buttonStuffed{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px 0px 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &__title{
+        text-transform: uppercase;
+        font-size: rem(18);
+        font-family: $font-Open;
+        font-weight: 700;
+        color: $text;
+    }
+}
+
 .stuffed{
     display: flex;
     flex-direction: column;
@@ -15,5 +30,6 @@
         margin-bottom: 20px;
         border-color: $border-icon;
         border-style: solid;
+        height: 30px;
     }
 }
