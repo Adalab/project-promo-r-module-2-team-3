@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  background-color: $main-bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 6rem 2.2rem 2.2rem 2.2rem;
+  border-top: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  border-left: 1px solid $border-color;
+  @include tablet {
+    padding: 22rem 11rem 1.9rem 11rem;
+  }
+  &__img {
+    max-width: 15.6rem;
+    max-height: 4rem;
+    @include tablet {
+      max-width: 26.2rem;
+      max-height: 6.6rem;
+    }
+  }
+}
