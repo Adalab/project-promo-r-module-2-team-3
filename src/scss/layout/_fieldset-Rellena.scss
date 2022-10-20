@@ -1,0 +1,19 @@
+.stuffed{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: left;
+    margin: 10px 20px 10px 20px;
+    &__infoLabel{
+        color: $title-card-icons;
+        font-size: rem(14);
+        margin-bottom: 7px;
+        font-weight: 700;
+    }
+    &__infoInput{
+        margin-bottom: 20px;
+        border-color: $border-icon;
+        border-style: solid;
+    }
+}
