@@ -1,8 +1,9 @@
-@import 'core/reset';
-@import 'core/reset';
-@import 'core/variables';
-@import 'core/functions';
-@import 'layout/fieldset-Diseña';
+@import "core/reset";
+@import "core/reset";
+@import "core/variables";
+@import "core/functions";
+@import "layout/fieldset-Diseña";
+@import "layout/mainIndex";
 
 /*@import 'components/code';
 @import 'components/links';
@@ -11,18 +12,17 @@
 /*@import 'pages/index';
 */
 
-*{
-    box-sizing: border-box;
-    font-family: $font-Open;
+* {
+  box-sizing: border-box;
+  font-family: $font-Open;
 }
 
-
-.mainCreate{
-    @media all and (min-width: 768px){
+.mainCreate {
+  @media all and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    &__card{
-        order: 1;
+    &__card {
+      order: 1;
     }
-    }
+  }
 }
