@@ -1,4 +1,4 @@
-.buttonStuffed{
+.buttonFill{
     display: flex;
     justify-content: space-between;
     margin: 0px 20px 0px 20px;
@@ -13,7 +13,7 @@
     }
 }
 
-.stuffed{
+.fill{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -30,6 +30,7 @@
         margin-bottom: 20px;
         border-color: $border-icon;
         border-style: solid;
+        border-width: 1px;
         height: 30px;
     }
 }
