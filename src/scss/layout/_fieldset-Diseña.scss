@@ -1,3 +1,144 @@
-.design {
-color: black;
+.design-title {
+  margin-left: 20px;
+  margin-top: 27px;
+  text-transform: capitalize;
+}
+
+.colors-text {
+  margin-left: 20px;
+}
+
+.large-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-container-1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  justify-content: right;
+}
+
+.color-container-2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  justify-content: right;
+}
+
+.color-container-3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  justify-content: right;
+}
+
+.fa fa-object-ungroup {
+  color: $color-palette--orange;
+}
+
+.design-title {
+  color: $text;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.design-colors {
+  color: $text;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+// PALETTE 1
+
+.colorpalette1 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+.rectangle-a1 {
+  width: 30px;
+  height: 25px;
+  background-color: $title-card-icons;
+}
+
+.rectangle-a2 {
+  width: 30px;
+  height: 25px;
+  background-color: $start-button;
+}
+
+.rectangle-a3 {
+  width: 30px;
+  height: 25px;
+  background-color: $border-icon;
+}
+
+// PALETTE 2
+
+.colorpalette2 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+.rectangle-b1 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-blood;
+}
+
+.rectangle-b2 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-red;
+}
+
+.rectangle-b3 {
+  width: 30px;
+  height: 25px;
+  background-color: $title-icons;
+}
+
+// PALETTE 3
+
+.colorpalette3 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+.rectangle-c1 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette-slate;
+}
+
+.rectangle-c2 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette--orange;
+}
+
+.rectangle-c3 {
+  width: 30px;
+  height: 25px;
+  background-color: $color-palette--blue;
+}
+
+.line-divider {
+  position: relative;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid;
+  color: $footer-bg-color;
 }

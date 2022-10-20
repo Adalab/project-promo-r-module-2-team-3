@@ -3,6 +3,7 @@
 @import 'core/functions';
 @import 'core/_mixin.scss';
 @import 'layout/fieldset-Diseña';
+@import './layout/fieldset-Rellena';
 
 /*@import 'components/code';
 @import 'components/links';*/
@@ -11,18 +12,17 @@
 /*@import 'pages/index';
 */
 
-*{
-    box-sizing: border-box;
-    font-family: $font-Open;
+* {
+  box-sizing: border-box;
+  font-family: $font-Open;
 }
 
-
-.mainCreate{
-    @media all and (min-width: 768px){
+.mainCreate {
+  @media all and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    &__card{
-        order: 1;
+    &__card {
+      order: 1;
     }
-    }
+  }
 }
