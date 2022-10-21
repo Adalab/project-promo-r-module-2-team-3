@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Awesome profile-cards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@300;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="./assets/images/favicon.png" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+
+</head>
+<body>
+    
+<header>
+    <header class="header">
+        <a href="./index.html"><img src="./assets/images/logo-awesome-profile-cards.svg" class="header__img"
+                alt="Logo Awesome profile-cards"></a>
+    </header>    
+</header>
+
+<main class="mainCreate">
+        <section class="mainCreate__card card">
+            <button class="card__button" title="Reset" name="Reset" type="button"><i class="far fa-trash-alt"></i> Reset</button>
+            <article class="card__article">
+                <div class="card__article--data">
+                    <h2 class="name">Nombre apellido</h2>
+                    <p class="text">Front-end developer</p>
+                </div>
+                <div class="card__article--photo">
+
+                </div> 
+                <ul class="card__article--links">
+                    <li><i class="fa-solid fa-mobile-screen-button icon"></i></li>
+                    <li><i class="fa-regular fa-envelope icon"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in icon"></i></li>
+                    <li><i class="fa-brands fa-github-alt icon"></i></li>
+                </ul>
+            </article>
+        </section>
+
+    <section class="mainCreate__design">
+            <legend class="design-title"><i class="fa-solid fa-object-ungroup"></i>Diseña
+            </legend>
+
+            <div class="colors-text">
+            <h2>Colores</h2>
+            </div>
+
+            <main class="large-container">
+            <div class="color-container-1">
+                <input id="colorpalette1"
+                  type="radio"
+                  value="colorpalette1"
+                  name="colorpalette"
+                />
+                <section class="colorpalette1">
+                    <div class="rectangle-a1"></div>
+                    <div class="rectangle-a2"></div>
+                    <div class="rectangle-a3"></div>
+                  </section>
+            </div>
+
+            <div class="color-container-2">
+                <input id="colorpalette2"
+                  type="radio"
+                  value="colorpalette2"
+                  name="colorpalette"
+                />
+                <section class="colorpalette2">
+                    <div class="rectangle-b1"></div>
+                    <div class="rectangle-b2"></div>
+                    <div class="rectangle-b3"></div>
+                  </section>
+            </div>
+
+            <div class="color-container-3">
+                <input
+                  id="colorpalette3"
+                  type="radio"
+                  value="colorpalette3"
+                  name="colorpalette"
+                />
+                <section class="colorpalette3">
+                    <div class="rectangle-c1"></div>
+                    <div class="rectangle-c2"></div>
+                    <div class="rectangle-c3"></div>
+                  </section>
+            </div>
+        </main>
+        <hr class="line-divider">
+        </fieldset>
+        <fieldset>
+
+            <div class="buttonFill">
+                <legend class="buttonFill__title"><i class="fa-regular fa-keyboard"></i>Rellena</legend>
+                <img src="./assets/images/ico-scroll-down.svg" class="buttonFill_arrow" alt="">
+            </div>
+
+            <form action="" class="fill">
+                <label for="full_name" class="fill__infoLabel">Nombre completo</label>
+                <input type="text" id="full_name" class="fill__infoInput"  placeholder="Nombre Apellido" required autocomplete="name">
+
+                <label for="job" class="fill__infoLabel">Puesto</label>
+                <input type="text" id="job" class="fill__infoInput"  placeholder="Full stack developer" required>
+
+                <label for="imageForm" class="fill__infoLabel">Imagen de perfil</label>
+                <div class="fill__action">
+                    <label for="imageForm" class="fill__infoLabel fill__action--labelInput">Añadir imagen</label>
+                    <input type="file" accept="image/*" class="fill__infoInput fill__action--imageInput"  id="imageForm">
+                    <div class="fill__action--preview"> </div>
+                </div>
+
+                <label for="email" class="fill__infoLabel">Email</label>
+                <input type="email" id="email" class="fill__infoInput"  placeholder="ejemplo@dominio.tld" required autocomplete="email">
+
+                <label for="phone" class="fill__infoLabel">Teléfono</label>
+                <input type="tel" id="phone" class="fill__infoInput"  placeholder="XXXXXXXXX" autocomplete="tel">
+
+                <label for="linkedin" class="fill__infoLabel">Linkedin</label>
+                <input type="text" id="linkedin" class="fill__infoInput"  placeholder="linkedin.com/in/usuario" autocomplete="url">
+
+                <label for="github" class="fill__infoLabel">Github</label>
+                <input type="text" id="github" class="fill__infoInput" placeholder="@usuario" autocomplete="url">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Comparte</legend>
+        </fieldset>
+    </section>
+</main>
+<footer>
+    <footer class="footer">
+
+        <small class="footer__small">Awesome profile-cards &copy; 2018</small>
+        <img src="./assets/images/logo-adalab.png" class="footer__img" alt="Logo Adalab" />
+        
+        </footer>
+        
+</footer>
+
+</body>
+</html>
