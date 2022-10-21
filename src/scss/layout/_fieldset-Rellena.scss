@@ -36,6 +36,30 @@
         border-width: 1px;
         height: 30px;
     }
+    &__action{
+        margin-top: 15px;
+        margin-bottom: 35px;
+        display: flex;
+        gap: 30px;
+        &--labelInput{
+            background-color: $button-link;
+            padding: 7px 20px;
+            border-radius: 3px;
+            color: $main-bg-color;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 1);
+            cursor: pointer;
+        }
+        &--imageInput{
+            display: none;
+        }
+        &--preview{
+            width: 30px;
+            height: 30px;
+            border: solid 1px $border-icon;
+        }
+
+    }
+
     @media all and (min-width: 768px){
         margin: 10px 30px 10px 40px;
     }

@@ -1,0 +1,64 @@
+.card{
+    background-image: linear-gradient(to bottom, $bg-image-color, $bg-image-color-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__button{
+        background: none;
+        border: solid 1px $footer-bg-color;
+        color: $text;
+        margin: 38px 0 20px 0;
+        font-size: rem(12);
+        line-height: rem(20);
+        padding: 4px 12px 5px 10px;
+        border-radius: 15px;
+        transform: translateX(-115%);
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    &__article{
+        background-color: $footer-bg-color;
+        padding: 21px 0 12px 0;
+        box-shadow: 0 1px 10px 0 $black, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+        border-radius: 2px; 
+        margin-bottom: 40px;
+        
+        &--data{
+            position: relative;
+            border-left: solid 5px $start-button;
+            .name{
+                color: $title-card-icons;
+                font-family: $font-Montse;
+                font-size: rem(18);
+                font-weight: bold;
+                text-transform: capitalize;
+                margin: 0 14px 4px 15px;
+                line-height: rem(20);
+            }
+            .text{
+                color: $text;
+                font-family: $font-Montse;
+                font-size: rem(16); 
+                margin: 0 14px 4px 15px;
+                line-height: rem(20); 
+            }
+        }
+        &--photo{
+            background: url(https://simbei.com/wp-content/uploads/2016/09/simbei_escaparate_farmacia_vueltalcole_1.jpg) top no-repeat;
+            height: 200px;
+            margin: 10px 0;
+        }
+        &--links{
+            display: flex;
+            margin: 10px 50px 0 20px;
+            .icon{
+                color: $title-card-icons;
+                border: solid 2px $border-icon;
+                border-radius: 16px;
+                margin: 0 10px 0 0;
+                padding: 5px 6px 5px 6px;
+                cursor: pointer;
+            }
+        }
+    }
+}
