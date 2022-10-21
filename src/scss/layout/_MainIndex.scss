@@ -1,6 +1,94 @@
+.principal {
+  background-color: $main-bg-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .made {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  &__title {
+    color: $button-link;
+    font-family: $font-Merri;
+    font-weight: 900;
+    font-size: rem(19.2);
+    margin: 0px 49.3px 0px 47.7px;
+    width: rem(223);
+    &--text {
+      color: $title-card-icons;
+      font-size: rem(12.8);
+      font-weight: bolder;
+      margin: 0px 28px 17.8px 27.8px;
+      width: rem(264.8);
+      height: rem(38.4);
+      line-height: 1;
+    }
+  }
+}
+.made {
+  &__title::first-letter {
+    text-transform: capitalize;
+  }
+}
+.Section2 {
+  border: solid 1.6px;
+  border-color: $button-link;
+  width: 268px;
+  height: 73.8px;
+  border-radius: 4px;
+  margin-bottom: 38.6px;
+}
+.List {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  text-align: center;
+  color: $text;
+
+  font-size: rem(12.8);
+}
+
+.fa-solid.fa-object-ungroup {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.Element1 {
+  grid-row: 2/3;
+}
+.Element2 {
+  grid-row: 2/3;
+}
+.Element3 {
+  grid-row: 2/3;
+}
+.Element4,
+.Element5,
+.Element6 {
+  color: $button-link;
+  font-size: rem(22.4);
+  margin-top: rem(15);
+}
+
+.btn {
+  position: relative;
+  margin-bottom: 30px;
+  background-color: $start-button;
+  border-radius: 21px;
+  width: 129px;
+  height: 42px;
+
+  &__link {
+    position: absolute;
+    color: $footer-bg-color;
+    font-size: rem(16);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
