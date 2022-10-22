@@ -1,144 +1,189 @@
-.design-title {
-  margin-left: 20px;
-  margin-top: 27px;
-  text-transform: capitalize;
-}
-
-.colors-text {
-  margin-left: 20px;
-}
-
-.large-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.color-container-1 {
-  display: flex;
-  flex-direction: row;
-  margin-top: 0px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  justify-content: right;
-}
-
-.color-container-2 {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  justify-content: right;
-}
-
-.color-container-3 {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  justify-content: right;
-}
-
 .fa fa-object-ungroup {
   color: $color-palette--orange;
 }
 
-.design-title {
+.fa-solid fa-angle-u {
   color: $text;
-  font-weight: 600;
-  font-size: 18px;
 }
 
-.design-colors {
-  color: $text;
-  font-weight: 300;
-  font-size: 18px;
+.buttonDesign__arrow {
+  transform: rotate(180deg);
 }
 
-// PALETTE 1
+.buttonDesign {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px 0px 20px;
+  padding-top: 25px;
+  padding-bottom: 22px;
+}
 
-.colorpalette1 {
+.buttonDesign__title {
+  text-transform: uppercase;
+  font-size: rem(18);
+  font-family: $font-Open;
+  font-weight: 700;
+  color: $text;
+}
+.BoxDesignColorsLabel {
+  display: flex;
+  align-content: left;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.ColorsText {
+  text-transform: uppercase;
+  font-size: rem(14);
+  font-family: $font-Open;
+  font-weight: 500;
+  color: $text;
+}
+
+//PALETA DE COLORES
+
+//PALETA 1
+
+.largeContainerDesign {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colorsBoxOne {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  margin-right: 20px;
+  justify-content: right;
+}
+
+.MediumContainerDesign {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   margin-left: 10px;
+  justify-content: right;
+  align-items: center;
 }
 
-.rectangle-a1 {
+.colorPalette__container1 {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  justify-content: right;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.rectangle__a1 {
   width: 30px;
   height: 25px;
+  margin-left: 10px;
   background-color: $title-card-icons;
+  align-items: center;
 }
 
-.rectangle-a2 {
+.rectangle__a2 {
   width: 30px;
   height: 25px;
   background-color: $start-button;
+  align-items: center;
 }
 
-.rectangle-a3 {
+.rectangle__a3 {
   width: 30px;
   height: 25px;
   background-color: $border-icon;
+  align-items: center;
 }
 
-// PALETTE 2
+//PALETA DE COLORES
 
-.colorpalette2 {
+//PALETA 2
+
+.colorsBoxTwo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  margin-right: 20px;
+  justify-content: right;
+}
+
+.colorPalette__container2 {
+  width: 100vw;
+  position: relative;
   display: flex;
   flex-direction: row;
   margin-left: 10px;
+  justify-content: right;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.rectangle-b1 {
+.rectangle__b1 {
   width: 30px;
   height: 25px;
+  margin-left: 10px;
   background-color: $color-palette-blood;
 }
 
-.rectangle-b2 {
+.rectangle__b2 {
   width: 30px;
   height: 25px;
   background-color: $color-palette-red;
 }
 
-.rectangle-b3 {
+.rectangle__b3 {
   width: 30px;
   height: 25px;
   background-color: $title-icons;
 }
 
-// PALETTE 3
+//PALETA DE COLORES
 
-.colorpalette3 {
+//PALETA 3
+
+.colorsBoxThree {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  margin-right: 20px;
+  justify-content: right;
+}
+
+.colorPalette__container3 {
+  width: 100vw;
+  position: relative;
   display: flex;
   flex-direction: row;
   margin-left: 10px;
+  justify-content: right;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.rectangle-c1 {
+.rectangle__c1 {
   width: 30px;
   height: 25px;
+  margin-left: 10px;
   background-color: $color-palette-slate;
 }
 
-.rectangle-c2 {
+.rectangle__c2 {
   width: 30px;
   height: 25px;
   background-color: $color-palette--orange;
 }
 
-.rectangle-c3 {
+.rectangle__c3 {
   width: 30px;
   height: 25px;
   background-color: $color-palette--blue;
-}
-
-.line-divider {
-  position: relative;
-  align-items: center;
-  margin-left: 20px;
-  margin-right: 20px;
-  border: 1px solid;
-  color: $footer-bg-color;
+  margin-right: 0px;
 }
