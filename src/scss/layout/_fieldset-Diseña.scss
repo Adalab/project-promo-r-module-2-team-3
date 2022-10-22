@@ -2,20 +2,23 @@
   color: $color-palette--orange;
 }
 
-.fa-solid fa-angle-u {
-  color: $text;
+.fa-solid {
+  color: $button-link;
+}
+
+.fa-angle-u {
+  color: $button-link;
 }
 
 .buttonDesign__arrow {
   transform: rotate(180deg);
+  margin-right: 5px;
 }
 
 .buttonDesign {
   display: flex;
   justify-content: space-between;
-  margin: 0px 20px 0px 20px;
-  padding-top: 25px;
-  padding-bottom: 22px;
+  margin: 27px 20px 22px 20px;
 }
 
 .buttonDesign__title {
@@ -25,14 +28,14 @@
   font-weight: 700;
   color: $text;
 }
-.BoxDesignColorsLabel {
+.boxDesignColorsLabel {
   display: flex;
-  align-content: left;
-  margin-left: 20px;
+  justify-content: flex-start;
+  margin-left: 39px;
   align-items: center;
 }
 
-.ColorsText {
+.colorsText {
   text-transform: uppercase;
   font-size: rem(14);
   font-family: $font-Open;
@@ -59,12 +62,10 @@
   justify-content: right;
 }
 
-.MediumContainerDesign {
+.mediumContainerDesign {
   width: 100vw;
   display: flex;
-  flex-direction: row;
   margin-left: 10px;
-  justify-content: right;
   align-items: center;
 }
 
@@ -72,11 +73,9 @@
   width: 100vw;
   display: flex;
   flex-direction: row;
-  margin-left: 10px;
   justify-content: right;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0px 10px 10px;
 }
 
 .rectangle__a1 {
@@ -101,6 +100,12 @@
   align-items: center;
 }
 
+.line__divider {
+  border-color: $border-color;
+  height: 1px;
+  margin: 0px 20px 0px 20px;
+}
+
 //PALETA DE COLORES
 
 //PALETA 2
@@ -118,11 +123,9 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  margin-left: 10px;
   justify-content: right;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0px 10px 10px;
 }
 
 .rectangle__b1 {
@@ -161,11 +164,9 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  margin-left: 10px;
   justify-content: right;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0px 30px 10px;
 }
 
 .rectangle__c1 {
@@ -186,4 +187,49 @@
   height: 25px;
   background-color: $color-palette--blue;
   margin-right: 0px;
+}
+
+//MEDIA QUERIES 
+
+//TABLET
+
+@media all and (min-width: 768px){
+  
+  .buttonDesign {
+    margin: 27px 20px 22px 30px;
+  }
+
+  .buttonDesign__arrow {
+    margin-right: 10px;
+  }
+
+  .boxDesignColorsLabel {
+    margin-left: 39px;
+  }
+  
+    //PALETA DE COLORES
+  
+  
+  .colorsBoxOne {
+    margin-right: 30px;
+  }
+      
+  
+  .colorsBoxTwo {
+    margin-right: 30px;
+  }
+  
+    
+  .colorsBoxThree {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    margin-right: 30px;
+    justify-content: right;
+  }
+
+  .line__divider {
+    margin: 0px 30px 0px 40px;
+  }
+
 }
