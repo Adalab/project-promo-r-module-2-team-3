@@ -1,0 +1,41 @@
+.fa fa-share-nodes {
+  color: $color-palette--orange;
+}
+
+.fa-solid {
+  color: $button-link;
+}
+
+.fa-angle-u {
+  color: $button-link;
+}
+
+.buttonShare__arrow {
+  margin-right: 5px;
+}
+
+.line__divider1 {
+  border-width: 0.01em; 
+  border-color: $border-color;
+  margin: 0px 20px 0px 20px;
+}
+
+.line__divider2 {
+  border-width: 0.01em; 
+  border-color: $border-color;
+  margin: 0px 20px 30px 20px;
+}
+
+.buttonShare {
+  display: flex;
+  justify-content: space-between;
+  margin: 27px 20px 22px 20px;
+}
+
+.buttonShare__title {
+  text-transform: uppercase;
+  font-size: rem(18);
+  font-family: $font-Open;
+  font-weight: 700;
+  color: $text;
+}
