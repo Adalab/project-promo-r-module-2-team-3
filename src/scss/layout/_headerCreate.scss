@@ -1,0 +1,12 @@
+.headerCreate {
+  width: 100%;
+  background-color: $footer-bg-color;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: rem(31) 0 rem(30) rem(40);
+  &__img {
+    max-width: rem(201);
+    max-height: rem(50);
+  }
+}

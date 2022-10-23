@@ -18,8 +18,8 @@
 <body>
     
 <header>
-    <header class="header">
-        <a href="./index.html"><img src="./assets/images/logo-awesome-profile-cards.svg" class="header__img"
+    <header class="headerCreate">
+        <a href="./index.html"><img src="./assets/images/logo-awesome-profile-cards.svg" class="headerCreate__img"
                 alt="Logo Awesome profile-cards"></a>
     </header>    
 </header>
@@ -45,55 +45,58 @@
         </section>
 
     <section class="mainCreate__design">
-            <legend class="design-title"><i class="fa-solid fa-object-ungroup"></i>Diseña
-            </legend>
+        <fieldset class="design">
+        <section class="buttonDesign">
+        <p class="buttonDesign__title"><i class="fa-solid fa-object-ungroup"></i> Diseña </p>  
+          <img src="./assets/images/ico-scroll-down.svg" class="buttonDesign__arrow" alt="">
+        </section>
 
-            <div class="colors-text">
-            <h2>Colores</h2>
-            </div>
-
-            <main class="large-container">
-            <div class="color-container-1">
-                <input id="colorpalette1"
+            <main class="largeContainerDesign">
+        <div class="mediumContainerDesign">
+              <div class ="boxDesignColorsLabel"><span class="colorsText">
+                Colores
+              </span></div>
+              <div class="colorPalette__container1">
+              <input class="colorPalette__input1"
                   type="radio"
                   value="colorpalette1"
                   name="colorpalette"
                 />
-                <section class="colorpalette1">
-                    <div class="rectangle-a1"></div>
-                    <div class="rectangle-a2"></div>
-                    <div class="rectangle-a3"></div>
-                  </section>
-            </div>
+                <section class="colorsBoxOne">
+                    <div class="rectangle__a1"></div>
+                    <div class="rectangle__a2"></div>
+                    <div class="rectangle__a3"></div>
+                  </section></div>
+                </div>
 
-            <div class="color-container-2">
-                <input id="colorpalette2"
+        <div class="colorPalette__container2">
+                <input id="colorPalette__input2"
                   type="radio"
                   value="colorpalette2"
                   name="colorpalette"
                 />
-                <section class="colorpalette2">
-                    <div class="rectangle-b1"></div>
-                    <div class="rectangle-b2"></div>
-                    <div class="rectangle-b3"></div>
+                <section class="colorsBoxTwo">
+                    <div class="rectangle__b1"></div>
+                    <div class="rectangle__b2"></div>
+                    <div class="rectangle__b3"></div>
                   </section>
             </div>
 
-            <div class="color-container-3">
+            <div class="colorPalette__container3">
                 <input
-                  id="colorpalette3"
+                  id="colorPalette__input3"
                   type="radio"
                   value="colorpalette3"
                   name="colorpalette"
                 />
-                <section class="colorpalette3">
-                    <div class="rectangle-c1"></div>
-                    <div class="rectangle-c2"></div>
-                    <div class="rectangle-c3"></div>
+                <section class="colorsBoxThree">
+                    <div class="rectangle__c1"></div>
+                    <div class="rectangle__c2"></div>
+                    <div class="rectangle__c3"></div>
                   </section>
             </div>
         </main>
-        <hr class="line-divider">
+        <hr class="line__divider">
         </fieldset>
         <fieldset>
 
@@ -129,9 +132,22 @@
                 <input type="text" id="github" class="fill__infoInput" placeholder="@usuario" autocomplete="url">
             </form>
         </fieldset>
-        <fieldset>
-            <legend>Comparte</legend>
+        <fieldset class="share">
+            <hr class="line__divider1">
+            <section class="buttonShare">
+            <p class="buttonShare__title"><i class="fa-solid fa-share-nodes"></i> Comparte </p>  
+              <img src="./assets/images/ico-scroll-down.svg" class="buttonShare__arrow" alt="">
+            </section>
         </fieldset>
+        <a href="#" class="buttonShare_cTa_Link">
+        <div class="buttonShare_callToAction">
+          <i class="fa-regular fa-address-card"></i><p class="buttonShare_cTa_Text">Crear Tarjeta</p></div></a>
+            <hr class="line__divider2">
+
+
+            <!-- <div class="buttonShare_callToAction">
+          <i class="fa-regular fa-address-card"></i><a href="#" class="buttonShare_cTa">Crear Tarjeta</a></div>
+            <hr class="line__divider2"> -->
     </section>
 </main>
 <footer>
@@ -139,9 +155,8 @@
 
         <small class="footer__small">Awesome profile-cards &copy; 2018</small>
         <img src="./assets/images/logo-adalab.png" class="footer__img" alt="Logo Adalab" />
-        
-        </footer>
-        
+
+    </footer>
 </footer>
 
 </body>
