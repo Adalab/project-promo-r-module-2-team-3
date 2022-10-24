@@ -48,6 +48,12 @@
   color: $text;
 }
 
+// CREAR TARJETA - BOTÓN
+
+.buttonShare_cTa_Link {
+  text-decoration: none;
+}
+
 .buttonShare_callToAction {
   display: flex;
   width: 199px;
@@ -63,8 +69,12 @@
   cursor: pointer;
 }
 
-.buttonShare_cTa_Link {
-  text-decoration: none;
+.fa-address-card {
+  color: $footer-bg-color;
+  padding-right: 10px;
+  font-size: 22px;
+  text-align: center;
+  justify-content: center;
 }
 
 .buttonShare_cTa_Text {
@@ -75,12 +85,103 @@
   align-items: center;
 }
 
-.fa-address-card {
-  color: $footer-bg-color;
-  padding-right: 10px;
-  font-size: 22px;
-  text-align: center;
-  justify-content: center;
+// CREAR TARJETA - BOTÓN CLIQUEADO
+
+.buttonShare_cTa_Link_clicked {
+  text-decoration: none;
 }
 
+.buttonShare_callToAction_clicked {
+  display: flex;
+  width: 199px;
+  padding: 13px 18px 13px 18px;
+  background-color: $clicked-button;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 43px;
+  cursor: pointer;
+}
 
+.buttonShare_cTa_Text_clicked {
+  text-transform: uppercase;
+  color: $footer-bg-color;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+}
+
+// LA TARJETA HA SIDO CREADA
+
+.cardCreated {
+}
+
+.cardCreated_text {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  color: $text;
+}
+
+.cardCreated_link {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: $button-link;
+  padding-top: 10px;
+  padding-bottom: 3px;
+}
+
+// BOTÓN TWITTER
+
+.buttonShare_cTa_Link_twitter {
+  text-decoration: none;
+}
+
+.buttonShare_callToAction_twitter {
+  display: flex;
+  width: 181px;
+  padding: 13px 18px 13px 18px;
+  background-color: $socialmedia-button;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 37px;
+  cursor: pointer;
+}
+
+.buttonShare_callToAction_twitter {
+  display: flex;
+  width: 191px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 13px 18px 13px 18px;
+  background-color: $socialmedia-button;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 43px;
+  cursor: pointer;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+}
+
+.buttonShare_cTa_Text_twitter {
+  font-size: rem(14);
+  text-transform: none;
+  color: $footer-bg-color;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  padding-left: 9.5px;
+}
+
+.fa-twitter {
+  color: $footer-bg-color;
+}
