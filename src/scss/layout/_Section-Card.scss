@@ -10,7 +10,7 @@
         margin: 38px 0 20px 0;
         font-size: rem(12);
         line-height: rem(20);
-        padding: 4px 12px 5px 10px;
+        padding: rem(4) rem(12) rem(5) rem(10);
         border-radius: 15px;
         transform: translateX(-115%);
         text-transform: uppercase;
@@ -18,7 +18,7 @@
     }
     &__article{
         background-color: $footer-bg-color;
-        padding: 21px 0 12px 0;
+        padding: rem(21) 0 rem(12) 0;
         box-shadow: 0 1px 10px 0 $black, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
         border-radius: 2px; 
         margin-bottom: 40px;
@@ -56,7 +56,7 @@
                 border: solid 2px $border-icon;
                 border-radius: 16px;
                 margin: 0 10px 0 0;
-                padding: 5px 6px 5px 6px;
+                padding: rem(5) rem(6) rem(5) rem(6);
                 cursor: pointer;
             }
         }
