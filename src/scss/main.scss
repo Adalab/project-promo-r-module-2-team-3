@@ -34,10 +34,6 @@
   @media all and (min-width: 1200px) {
     grid-template-columns: 1fr 2fr;
   }
-<<<<<<< HEAD
-  @media all and (min-width: 1200px) {
-    grid-template-columns: 1fr 2fr;
-  }
 }
 
 .hidden {
@@ -45,8 +41,5 @@
 }
 
 .arrowRotate {
-  transform: rotate(180deg);
+  transform: scaleY(1);
 }
-=======
-}
->>>>>>> c104030ffe5317a3b1883b10ef6b3ceb63bd859e

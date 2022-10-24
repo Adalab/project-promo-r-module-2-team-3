@@ -4,6 +4,9 @@
     margin: 0px 20px 0px 20px;
     padding-top: 15px;
     padding-bottom: 15px;
+    &__arrow{
+        transform: scaleY(-1);
+    }
     &__title{
         text-transform: uppercase;
         font-size: rem(18);

@@ -5,33 +5,40 @@ const arrowFill = document.querySelector('.js-arrow-fill');
 const arrowShare = document.querySelector('.js-arrow-share');
 const mainDesign = document.querySelector('.js-design');
 const fillForm = document.querySelector(".js-fill");
+const mainShare = document.querySelector(".js-share");
 
 
 arrowDesign.addEventListener('click',(event)=>{
     event.preventDefault();
-    if (mainDesign.classList.contains('hidden')) {
+    mainDesign.classList.toggle('hidden');
+    arrowDesign.classList.toggle('arrowRotate');
+    /*if (mainDesign.classList.contains('hidden')) {
         mainDesign.classList.remove('hidden');
-        mainDesign.classList.add('arrowRotate');
+        arrowDesign.classList.remove('arrowRotate');
     } else {
         mainDesign.classList.add('hidden');
-        mainDesign.classList.remove('arrowRotate');
-    }
+        arrowDesign.classList.add('arrowRotate');
+    }*/
 });
 
 arrowFill.addEventListener('click',(event)=>{
     event.preventDefault();
-    if (fillForm.classList.contains('hidden')) {
+    fillForm.classList.toggle('hidden');
+    arrowFill.classList.toggle('arrowRotate');
+    /*if (fillForm.classList.contains('hidden')) {
         fillForm.classList.remove('hidden');
     } else {
         fillForm.classList.add('hidden');
-    }
+    }*/
 });
 
 arrowShare.addEventListener('click',(event)=>{
     event.preventDefault();
-    if (mainDesign.classList.contains('hidden')) {
+    mainShare.classList.toggle('hidden');
+    arrowShare.classList.toggle('arrowRotate');
+    /*if (mainDesign.classList.contains('hidden')) {
         mainDesign.classList.remove('hidden');
     } else {
         mainDesign.classList.add('hidden');
-    }
+    }*/
 });
