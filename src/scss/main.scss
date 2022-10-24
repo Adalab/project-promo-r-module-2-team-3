@@ -11,7 +11,7 @@
 /*@import 'components/code';
 @import 'components/links';*/
 @import "layout/header";
-@import 'layout/headerCreate';
+@import "layout/headerCreate";
 @import "layout/footer";
 /*@import 'pages/index';
 */
@@ -37,4 +37,10 @@
   }
 }
 
+.hidden {
+  display: none;
+}
 
+.arrowRotate {
+  transform: rotate(180deg);
+}

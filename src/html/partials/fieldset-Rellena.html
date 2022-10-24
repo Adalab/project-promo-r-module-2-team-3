@@ -2,31 +2,34 @@
 
     <div class="buttonFill">
         <legend class="buttonFill__title"><i class="fa-regular fa-keyboard"></i>Rellena</legend>
-        <img src="./assets/images/ico-scroll-down.svg" class="buttonFill_arrow" alt="">
+        <img src="./assets/images/ico-scroll-down.svg" class="js-arrow-fill buttonFill_arrow" alt="">
     </div>
 
-    <form action="" class="fill">
+    <form action="" class="fill js-fill">
         <label for="full_name" class="fill__infoLabel">Nombre completo</label>
-        <input type="text" id="full_name" class="fill__infoInput"  placeholder="Nombre Apellido" required autocomplete="name">
+        <input type="text" id="full_name" class="fill__infoInput" placeholder="Nombre Apellido" required
+            autocomplete="name">
 
         <label for="job" class="fill__infoLabel">Puesto</label>
-        <input type="text" id="job" class="fill__infoInput"  placeholder="Full stack developer" required>
+        <input type="text" id="job" class="fill__infoInput" placeholder="Full stack developer" required>
 
         <label for="imageForm" class="fill__infoLabel">Imagen de perfil</label>
         <div class="fill__action">
             <label for="imageForm" class="fill__infoLabel fill__action--labelInput">Añadir imagen</label>
-            <input type="file" accept="image/*" class="fill__infoInput fill__action--imageInput"  id="imageForm">
+            <input type="file" accept="image/*" class="fill__infoInput fill__action--imageInput" id="imageForm">
             <div class="fill__action--preview"> </div>
         </div>
 
         <label for="email" class="fill__infoLabel">Email</label>
-        <input type="email" id="email" class="fill__infoInput"  placeholder="ejemplo@dominio.tld" required autocomplete="email">
+        <input type="email" id="email" class="fill__infoInput" placeholder="ejemplo@dominio.tld" required
+            autocomplete="email">
 
         <label for="phone" class="fill__infoLabel">Teléfono</label>
-        <input type="tel" id="phone" class="fill__infoInput"  placeholder="XXXXXXXXX" autocomplete="tel">
+        <input type="tel" id="phone" class="fill__infoInput" placeholder="XXXXXXXXX" autocomplete="tel">
 
         <label for="linkedin" class="fill__infoLabel">Linkedin</label>
-        <input type="text" id="linkedin" class="fill__infoInput"  placeholder="linkedin.com/in/usuario" autocomplete="url">
+        <input type="text" id="linkedin" class="fill__infoInput" placeholder="linkedin.com/in/usuario"
+            autocomplete="url">
 
         <label for="github" class="fill__infoLabel">Github</label>
         <input type="text" id="github" class="fill__infoInput" placeholder="@usuario" autocomplete="url">
