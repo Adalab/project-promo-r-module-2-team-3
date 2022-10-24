@@ -27,11 +27,14 @@
     grid-template-columns: 1fr 1fr;
     &__card {
       order: 1;
+      margin: 20px 40px 20px 0;
+      border-radius: 6px;
     }
   }
   @media all and (min-width: 1200px) {
     grid-template-columns: 1fr 2fr;
   }
+<<<<<<< HEAD
   @media all and (min-width: 1200px) {
     grid-template-columns: 1fr 2fr;
   }
@@ -44,3 +47,6 @@
 .arrowRotate {
   transform: rotate(180deg);
 }
+=======
+}
+>>>>>>> c104030ffe5317a3b1883b10ef6b3ceb63bd859e
