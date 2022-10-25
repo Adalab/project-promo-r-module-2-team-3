@@ -2,35 +2,38 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Awesome profile-cards</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@300;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" href="./assets/images/favicon.png" />
-  <link rel="stylesheet" href="./assets/css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome profile-cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@300;700&family=Open+Sans:wght@300;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
 
 </head>
+
 <body>
-    
-<header>
+
+
     <header class="headerCreate">
         <a href="./index.html"><img src="./assets/images/logo-awesome-profile-cards.svg" class="headerCreate__img"
                 alt="Logo Awesome profile-cards"></a>
-    </header>    
-</header>
+    </header>
 
-<main class="mainCreate">
+
+    <main class="mainCreate">
         <section class="mainCreate__card card">
             <button class="card__button" title="Reset" name="Reset" type="button"><i class="far fa-trash-alt"></i> Reset</button>
             <article class="card__article">
                 <div class="card__article--data">
                     <h2 class="name">Nombre apellido</h2>
-                    <p class="text">Front-end developer</p>
+                    <h3 class="text">Front-end developer</h3>
                 </div>
                 <div class="card__article--photo">
 
@@ -44,120 +47,143 @@
             </article>
         </section>
 
-    <section class="mainCreate__design">
-        <fieldset class="design">
-        <section class="buttonDesign">
-        <p class="buttonDesign__title"><i class="fa-solid fa-object-ungroup"></i> Diseña </p>  
-          <img src="./assets/images/ico-scroll-down.svg" class="buttonDesign__arrow" alt="">
-        </section>
+        <section class="mainCreate__design">
+            <fieldset class="design">
+              <section class="buttonDesign">
+                <p class="buttonDesign__title"><i class="fa-solid fa-object-ungroup"></i> Diseña </p>
+                <img src="./assets/images/ico-scroll-down.svg" class="buttonDesign__arrow js-arrow-design" alt="">
+              </section>
 
-            <main class="largeContainerDesign">
-        <div class="mediumContainerDesign">
-              <div class ="boxDesignColorsLabel"><span class="colorsText">
-                Colores
-              </span></div>
-              <div class="colorPalette__container1">
-              <input class="colorPalette__input1"
-                  type="radio"
-                  value="colorpalette1"
-                  name="colorpalette"
-                />
-                <section class="colorsBoxOne">
-                    <div class="rectangle__a1"></div>
-                    <div class="rectangle__a2"></div>
-                    <div class="rectangle__a3"></div>
-                  </section></div>
+              <main class="largeContainerDesign  js-design">
+                <div class="mediumContainerDesign">
+                  <div class="boxDesignColorsLabel"><span class="colorsText">
+                      Colores
+                    </span></div>
+                  <div class="colorPalette__container1">
+                    <input class="colorPalette__input1" type="radio" value="colorpalette1" name="colorpalette" />
+                    <section class="colorsBoxOne">
+                      <div class="rectangle__a1"></div>
+                      <div class="rectangle__a2"></div>
+                      <div class="rectangle__a3"></div>
+                    </section>
+                  </div>
                 </div>
 
-        <div class="colorPalette__container2">
-                <input id="colorPalette__input2"
-                  type="radio"
-                  value="colorpalette2"
-                  name="colorpalette"
-                />
-                <section class="colorsBoxTwo">
+                <div class="colorPalette__container2">
+                  <input id="colorPalette__input2" type="radio" value="colorpalette2" name="colorpalette" />
+                  <section class="colorsBoxTwo">
                     <div class="rectangle__b1"></div>
                     <div class="rectangle__b2"></div>
                     <div class="rectangle__b3"></div>
                   </section>
-            </div>
+                </div>
 
-            <div class="colorPalette__container3">
-                <input
-                  id="colorPalette__input3"
-                  type="radio"
-                  value="colorpalette3"
-                  name="colorpalette"
-                />
-                <section class="colorsBoxThree">
+                <div class="colorPalette__container3">
+                  <input id="colorPalette__input3" type="radio" value="colorpalette3" name="colorpalette" />
+                  <section class="colorsBoxThree">
                     <div class="rectangle__c1"></div>
                     <div class="rectangle__c2"></div>
                     <div class="rectangle__c3"></div>
                   </section>
-            </div>
-        </main>
-        <hr class="line__divider">
-        </fieldset>
-        <fieldset>
+                </div>
+              </main>
+              <hr class="line__divider">
+            </fieldset>
+            <fieldset>
 
-            <div class="buttonFill">
-                <legend class="buttonFill__title"><i class="fa-regular fa-keyboard"></i>Rellena</legend>
-                <img src="./assets/images/ico-scroll-down.svg" class="buttonFill_arrow" alt="">
-            </div>
-
-            <form action="" class="fill">
-                <label for="full_name" class="fill__infoLabel">Nombre completo</label>
-                <input type="text" id="full_name" class="fill__infoInput"  placeholder="Nombre Apellido" required autocomplete="name">
-
-                <label for="job" class="fill__infoLabel">Puesto</label>
-                <input type="text" id="job" class="fill__infoInput"  placeholder="Full stack developer" required>
-
-                <label for="imageForm" class="fill__infoLabel">Imagen de perfil</label>
-                <div class="fill__action">
-                    <label for="imageForm" class="fill__infoLabel fill__action--labelInput">Añadir imagen</label>
-                    <input type="file" accept="image/*" class="fill__infoInput fill__action--imageInput"  id="imageForm">
-                    <div class="fill__action--preview"> </div>
+                <div class="buttonFill">
+                    <legend class="buttonFill__title"><i class="fa-regular fa-keyboard"></i>Rellena</legend>
+                    <img src="./assets/images/ico-scroll-down.svg" class="js-arrow-fill buttonFill__arrow" alt="">
                 </div>
 
-                <label for="email" class="fill__infoLabel">Email</label>
-                <input type="email" id="email" class="fill__infoInput"  placeholder="ejemplo@dominio.tld" required autocomplete="email">
+                <form action="" class="fill js-fill">
+                    <label for="full_name" class="fill__infoLabel">Nombre completo</label>
+                    <input type="text" id="full_name" class="fill__infoInput" placeholder="Nombre Apellido" required
+                        autocomplete="name">
 
-                <label for="phone" class="fill__infoLabel">Teléfono</label>
-                <input type="tel" id="phone" class="fill__infoInput"  placeholder="XXXXXXXXX" autocomplete="tel">
+                    <label for="job" class="fill__infoLabel">Puesto</label>
+                    <input type="text" id="job" class="fill__infoInput" placeholder="Full stack developer" required>
 
-                <label for="linkedin" class="fill__infoLabel">Linkedin</label>
-                <input type="text" id="linkedin" class="fill__infoInput"  placeholder="linkedin.com/in/usuario" autocomplete="url">
+                    <label for="imageForm" class="fill__infoLabel">Imagen de perfil</label>
+                    <div class="fill__action">
+                        <label for="imageForm" class="fill__infoLabel fill__action--labelInput">Añadir imagen</label>
+                        <input type="file" accept="image/*" class="fill__infoInput fill__action--imageInput" id="imageForm">
+                        <div class="fill__action--preview"> </div>
+                    </div>
 
-                <label for="github" class="fill__infoLabel">Github</label>
-                <input type="text" id="github" class="fill__infoInput" placeholder="@usuario" autocomplete="url">
-            </form>
-        </fieldset>
-        <fieldset class="share">
-            <hr class="line__divider1">
-            <section class="buttonShare">
-            <p class="buttonShare__title"><i class="fa-solid fa-share-nodes"></i> Comparte </p>  
-              <img src="./assets/images/ico-scroll-down.svg" class="buttonShare__arrow" alt="">
-            </section>
-        </fieldset>
-        <a href="#" class="buttonShare_cTa_Link">
-        <div class="buttonShare_callToAction">
-          <i class="fa-regular fa-address-card"></i><p class="buttonShare_cTa_Text">Crear Tarjeta</p></div></a>
-            <hr class="line__divider2">
+                    <label for="email" class="fill__infoLabel">Email</label>
+                    <input type="email" id="email" class="fill__infoInput" placeholder="ejemplo@dominio.tld" required
+                        autocomplete="email">
+
+                    <label for="phone" class="fill__infoLabel">Teléfono</label>
+                    <input type="tel" id="phone" class="fill__infoInput" placeholder="XXXXXXXXX" autocomplete="tel">
+
+                    <label for="linkedin" class="fill__infoLabel">Linkedin</label>
+                    <input type="text" id="linkedin" class="fill__infoInput" placeholder="linkedin.com/in/usuario"
+                        autocomplete="url">
+
+                    <label for="github" class="fill__infoLabel">Github</label>
+                    <input type="text" id="github" class="fill__infoInput" placeholder="@usuario" autocomplete="url">
+                </form>
+            </fieldset>
+            <fieldset class="share">
+              <hr class="line__divider1">
+              <section class="buttonShare">
+                <p class="buttonShare__title"><i class="fa-solid fa-share-nodes"></i> Comparte </p>
+                <img src="./assets/images/ico-scroll-down.svg" class="buttonShare__arrow js-arrow-share" alt="">
+              </section>
+              <a href="#" class="buttonShare_cTa_Link js-share">
+                <div class="buttonShare_callToAction">
+                  <i class="fa-regular fa-address-card"></i>
+                  <p class="buttonShare_cTa_Text">Crear Tarjeta</p>
+                </div>
+              </a>
+              <hr class="line__divider2">
+            </fieldset>
 
 
-            <!-- <div class="buttonShare_callToAction">
-          <i class="fa-regular fa-address-card"></i><a href="#" class="buttonShare_cTa">Crear Tarjeta</a></div>
-            <hr class="line__divider2"> -->
-    </section>
-</main>
-<footer>
-    <footer class="footer">
+            <!--CREAR TARJETA - BOTÓN CLIQUEADO-->
 
-        <small class="footer__small">Awesome profile-cards &copy; 2018</small>
-        <img src="./assets/images/logo-adalab.png" class="footer__img" alt="Logo Adalab" />
+            <a href="#" class="buttonShare_cTa_Link_clicked">
+              <div class="buttonShare_callToAction_clicked">
+                <i class="fa-regular fa-address-card"></i>
+                <p class="buttonShare_cTa_Text_clicked">Crear Tarjeta</p>
+              </div></a
+            >
 
+
+            <hr class="line__divider2" />
+
+
+            <!--LA TARJETA HA SIDO CREADA-->
+
+            <div class="cardCreated">
+              <p class="cardCreated_text">La tarjeta ha sido creada:</p>
+              <p class="cardCreated_link">
+                https://https://awesome-profile-card.com/?id=AA56D
+              </p>
+            </div>
+
+
+            <!--BOTÓN TWITTER-->
+
+            <a href="#" class="buttonShare_cTa_Link_twitter">
+              <div class="buttonShare_callToAction_twitter">
+                <i class="fa-brands fa-twitter"></i>
+                <p class="buttonShare_cTa_Text_twitter">Compartir en twitter</p>
+              </div></a>
+        </section>
+    </main>
+    <footer>
+        <footer class="footer">
+
+            <small class="footer__small">Awesome profile-cards &copy; 2018</small>
+            <img src="./assets/images/logo-adalab.png" class="footer__img" alt="Logo Adalab" />
+
+        </footer>
     </footer>
-</footer>
+    <script src="./assets/js/main.js"></script>
 
 </body>
+
 </html>
