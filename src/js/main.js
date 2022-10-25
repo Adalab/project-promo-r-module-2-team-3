@@ -7,42 +7,34 @@ const mainDesign = document.querySelector('.js-design');
 const fillForm = document.querySelector(".js-fill");
 const mainShare = document.querySelector(".js-share");
 
-function unfold (arrow,content){
+const unfold = (arrow,content) => {
     arrow.classList.toggle('arrowRotate');
     content.classList.toggle('hidden');
 }
 
+mainShare.classList.add('hidden');
+fillForm.classList.add('hidden')
+
 arrowDesign.addEventListener('click',()=>{
     unfold(arrowDesign,mainDesign);
-    /*mainDesign.classList.toggle('hidden');
-    arrowDesign.classList.toggle('arrowRotate');
-    if (mainDesign.classList.contains('hidden')) {
-        mainDesign.classList.remove('hidden');
-        arrowDesign.classList.remove('arrowRotate');
-    } else {
-        mainDesign.classList.add('hidden');
-        arrowDesign.classList.add('arrowRotate');
-    }*/
+    if (!mainDesign.classList.contains('hidden') && arrowDesign.classList.contains('arrowRotate')) {
+        mainShare.classList.add('hidden');
+        fillForm.classList.add('hidden');
+    }
 });
 
 arrowFill.addEventListener('click',()=>{
     unfold(arrowFill,fillForm);
-    /*fillForm.classList.toggle('hidden');
-    arrowFill.classList.toggle('arrowRotate');
-    if (fillForm.classList.contains('hidden')) {
-        fillForm.classList.remove('hidden');
-    } else {
-        fillForm.classList.add('hidden');
-    }*/
+    if (!fillForm.classList.contains('hidden')) {
+        mainShare.classList.add('hidden');
+        mainDesign.classList.add('hidden');
+    }
 });
 
 arrowShare.addEventListener('click',()=>{
     unfold(arrowShare,mainShare);
-    /*mainShare.classList.toggle('hidden');
-    arrowShare.classList.toggle('arrowRotate');
-    if (mainDesign.classList.contains('hidden')) {
-        mainDesign.classList.remove('hidden');
-    } else {
+    if (!mainShare.classList.contains('hidden')) {
+        fillForm.classList.add('hidden');
         mainDesign.classList.add('hidden');
-    }*/
+    }
 });
