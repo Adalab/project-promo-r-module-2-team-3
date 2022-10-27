@@ -3,13 +3,14 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: rem(170) rem(35) rem(40) rem(35);
+  padding: rem(200) rem(35) rem(60) rem(35);
   @include tablet {
-    padding: rem(500) rem(174) rem(31) rem(175);
+    height: 30vh;
+    padding: rem(370) rem(174) rem(31) rem(175);
   }
   &__img {
     max-width: rem(250);
-    max-height: rem(63);
+    max-height: rem(120);
     @include tablet {
       max-width: rem(419);
       max-height: rem(105);

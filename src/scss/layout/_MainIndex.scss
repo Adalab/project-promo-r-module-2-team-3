@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 70vh;
+  height: 44vh;
 }
 .made {
   display: flex;
@@ -17,13 +17,13 @@
     font-family: $font-Merri;
     font-weight: 900;
     font-size: rem(19.2);
-    margin: 0px 49.3px 5px 47.7px;
+    margin: 0px 49.3px 15px 47.7px;
     width: rem(223);
     &--text {
       color: $title-card-icons;
       font-size: rem(12.8);
       font-weight: bolder;
-      margin: 0px 28px 17.8px 27.8px;
+      margin: 0px 28px 30px 27.8px;
       width: rem(264.8);
       height: rem(38.4);
       line-height: 15px;
@@ -40,7 +40,7 @@
   height: 73.8px;
   width:268px;
   border-radius: 4px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   margin-top: 5px;
 }
 .List {
@@ -116,7 +116,7 @@
   .Section2 {
     width: 325px;
     height: 86px;
-    margin-bottom: 186px;
+    margin-bottom: 90px;
   }
  .List {
     font-size: rem(16);
@@ -129,4 +129,8 @@
   .btn {
     margin-bottom: 59px;
   }
+}
+
+body {
+  height: 100vh;
 }
