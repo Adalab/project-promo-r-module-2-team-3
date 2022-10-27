@@ -1,12 +1,11 @@
 .header {
-  width: 100%;
   background-color: $main-bg-color;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: rem(95) rem(35) rem(35.4) rem(35);
+  padding: rem(170) rem(35) rem(40) rem(35);
   @include tablet {
-    padding: rem(350) rem(174) rem(31) rem(175);
+    padding: rem(500) rem(174) rem(31) rem(175);
   }
   &__img {
     max-width: rem(250);

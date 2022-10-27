@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 70vh;
 }
 .made {
   display: flex;
@@ -16,7 +17,7 @@
     font-family: $font-Merri;
     font-weight: 900;
     font-size: rem(19.2);
-    margin: 0px 49.3px 0px 47.7px;
+    margin: 0px 49.3px 5px 47.7px;
     width: rem(223);
     &--text {
       color: $title-card-icons;
@@ -25,7 +26,7 @@
       margin: 0px 28px 17.8px 27.8px;
       width: rem(264.8);
       height: rem(38.4);
-      line-height: 1;
+      line-height: 15px;
     }
   }
 }
@@ -36,11 +37,11 @@
 }
 .Section2 {
   border: solid 1.6px rgba(225, 115, 52, 0.21);
-
-  width: 268px;
   height: 73.8px;
+  width:268px;
   border-radius: 4px;
-  margin-bottom: 38.6px;
+  margin-bottom: 40px;
+  margin-top: 5px;
 }
 .List {
   display: grid;
@@ -48,7 +49,6 @@
   grid-template-rows: auto auto;
   text-align: center;
   color: $text;
-
   font-size: rem(12.8);
 }
 
@@ -58,12 +58,15 @@
 }
 .Element1 {
   grid-row: 2/3;
+  padding-top: 1.5px;
 }
 .Element2 {
   grid-row: 2/3;
+  padding-top: 1.5px;
 }
 .Element3 {
   grid-row: 2/3;
+  padding-top: 1.5px;
 }
 .Element4,
 .Element5,
@@ -115,7 +118,7 @@
     height: 86px;
     margin-bottom: 186px;
   }
-  .List {
+ .List {
     font-size: rem(16);
   }
   .Element4,
