@@ -16,22 +16,15 @@
 }
 
 .line__divider1 {
-  border-width: 0.01em;
-  border-color: $border-color;
+  opacity: 0.6;
+  color: $border-color;
   margin: 0px 20px 0px 20px;
 }
 
 .line__divider2 {
-  border-width: 0.01em;
-  border-color: $border-color;
+  opacity: 0.6;
+  color: $border-color;
   margin: 0px 20px 30px 20px;
-}
-
-.line__divider3 {
-  width: 100%;
-  border-width: 0.01em;
-  border-color: $border-color;
-  margin: 0;
 }
 
 .buttonShare {

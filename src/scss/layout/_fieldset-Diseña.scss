@@ -100,8 +100,8 @@
 }
 
 .line__divider {
-  border-width: 0.01em;
-  border-color: $border-color;
+  opacity: 0.6;
+  color: $border-color;
   margin: 0px 20px 0px 20px;
 }
 
