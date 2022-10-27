@@ -1,3 +1,5 @@
+/* eslint-disable quotes */
+/* eslint-disable no-unused-vars */
 "use strict";
 
 // Seccion desplegables
@@ -15,8 +17,8 @@ const inputJob = document.querySelector(".js_input_job");
 const inputImg = document.querySelector(".js_input_img");
 const inputEmail = document.querySelector(".js_input_email");
 const inputPhone = document.querySelector(".js_input_phone");
-const inputSocial = document.querySelector(".js_input_social");
-const inputGit = document.querySelector(".js_input_git");
+const inputLinkedin = document.querySelector(".js_input_linkedin");
+const inputGithub = document.querySelector(".js_input_github");
 
 // Seccion diseña
 const cardArticle = document.querySelector(".js_card_article");
