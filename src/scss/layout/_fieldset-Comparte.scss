@@ -41,7 +41,7 @@
   color: $text;
 }
 
-// CREAR TARJETA - BOTÓN
+/*// CREAR TARJETA - BOTÓN
 
 .buttonShare_cTa_Link {
   text-decoration: none;
@@ -60,7 +60,7 @@
   margin-top: 20px;
   margin-bottom: 43px;
   cursor: pointer;
-}
+}*/
 
 .fa-address-card {
   color: $footer-bg-color;
@@ -70,7 +70,7 @@
   justify-content: center;
 }
 
-.buttonShare_cTa_Text {
+/*.buttonShare_cTa_Text {
   text-transform: uppercase;
   color: $footer-bg-color;
   font-weight: bolder;
@@ -105,7 +105,7 @@
   font-weight: bolder;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 // LA TARJETA HA SIDO CREADA
 
@@ -161,7 +161,6 @@
   cursor: pointer;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
 }
-
 .buttonShare_cTa_Text_twitter {
   font-size: rem(14);
   text-transform: none;
@@ -174,4 +173,28 @@
 
 .fa-twitter {
   color: $footer-bg-color;
+}
+.buttonComparte {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.linkComparte {
+  background-color: $button-link;
+  color: $footer-bg-color;
+  text-decoration: none;
+  width: 199px;
+  height: 50px;
+  margin: 33px 49px 30px 44px;
+  padding: 13px 18px 13px 17px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(18);
+  text-transform: uppercase;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+}
+.linkComparte:visited {
+  //background-color: $clicked-button;
 }
