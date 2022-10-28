@@ -23,9 +23,9 @@
 
 .mainCreate {
   background-image: linear-gradient(to bottom, $main-bg-color, $footer-bg-color 9%);
-  height: 77vh;
 
   @media all and (min-width: 768px) {
+    height: 77vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
