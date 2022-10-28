@@ -8,6 +8,14 @@ resetBtn.addEventListener("click", (event) => {
   inputImg.value = "";
   inputEmail.value = "";
   inputPhone.value = "";
-  inputSocial.value = "";
-  inputGit.value = "";
+  inputLinkedin.value = "";
+  inputGithub.value = "";
+  /*inputCardName.innerHTML =;
+  inputCardJob.innerHTML = ´Front-end developer´;
+  inputCardImg. = "";
+  inputCardPhone.value = "";
+  inputCardEmail.value = "";
+  inputCardGithub.value = "";*/
+  inputCardName.reset();
+  inputCardJob.reset();
 });

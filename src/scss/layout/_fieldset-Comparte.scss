@@ -10,8 +10,13 @@
   color: $button-link;
 }
 
+.buttonShare {
+  display: flex;
+  justify-content: space-between;
+  margin: 27px 25px 22px 30px;
+}
+
 .buttonShare__arrow {
-  margin-right: 5px;
   transform: scaleY(-1);
 }
 
@@ -27,12 +32,6 @@
   margin: 0px 20px 30px 20px;
 }
 
-.buttonShare {
-  display: flex;
-  justify-content: space-between;
-  margin: 27px 25px 22px 30px;
-}
-
 .buttonShare__title {
   text-transform: uppercase;
   font-size: rem(18);
@@ -40,27 +39,6 @@
   font-weight: 700;
   color: $text;
 }
-
-/*// CREAR TARJETA - BOTÓN
-
-.buttonShare_cTa_Link {
-  text-decoration: none;
-}
-
-.buttonShare_callToAction {
-  display: flex;
-  width: 199px;
-  padding: 13px 18px 13px 18px;
-  background-color: $button-link;
-  border-radius: 12px;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 43px;
-  cursor: pointer;
-}*/
 
 .fa-address-card {
   color: $footer-bg-color;
@@ -70,110 +48,38 @@
   justify-content: center;
 }
 
-/*.buttonShare_cTa_Text {
-  text-transform: uppercase;
-  color: $footer-bg-color;
-  font-weight: bolder;
-  justify-content: center;
-  align-items: center;
-}
-
-// CREAR TARJETA - BOTÓN CLIQUEADO
-
-.buttonShare_cTa_Link_clicked {
-  text-decoration: none;
-}
-
-.buttonShare_callToAction_clicked {
+.cardCreated {
   display: flex;
-  width: 199px;
-  padding: 13px 18px 13px 18px;
-  background-color: $clicked-button;
-  border-radius: 12px;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 43px;
-  cursor: pointer;
+  flex-direction: column;
+  &_text {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    color: $text;
+  }
+  &_link {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    color: $button-link;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+  }
+  &_button {
+    text-decoration: none;
+    background-color: $socialmedia-button;
+    color: $footer-bg-color;
+    padding: 13px 18px 13px 18px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 3px;
+    cursor: pointer;
+  }
 }
 
-.buttonShare_cTa_Text_clicked {
-  text-transform: uppercase;
-  color: $footer-bg-color;
-  font-weight: bolder;
-  justify-content: center;
-  align-items: center;
-}*/
-
-// LA TARJETA HA SIDO CREADA
-
-.cardCreated_text {
-  font-size: 18px;
-  text-align: center;
-  font-weight: 700;
-  color: $text;
-}
-
-.cardCreated_link {
-  font-size: 12px;
-  text-align: center;
-  font-weight: 600;
-  color: $button-link;
-  padding-top: 10px;
-  padding-bottom: 3px;
-}
-
-// BOTÓN TWITTER
-
-.buttonShare_cTa_Link_twitter {
-  text-decoration: none;
-}
-
-.buttonShare_callToAction_twitter {
-  display: flex;
-  width: 181px;
-  padding: 13px 18px 13px 18px;
-  background-color: $socialmedia-button;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 37px;
-  cursor: pointer;
-}
-
-.buttonShare_callToAction_twitter {
-  display: flex;
-  width: 191px;
-  height: 30px;
-  border-radius: 10px;
-  padding: 13px 18px 13px 18px;
-  background-color: $socialmedia-button;
-  border-radius: 3px;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 43px;
-  cursor: pointer;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-}
-.buttonShare_cTa_Text_twitter {
-  font-size: rem(14);
-  text-transform: none;
-  color: $footer-bg-color;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
-  padding-left: 9.5px;
-}
-
-.fa-twitter {
-  color: $footer-bg-color;
-}
 .buttonComparte {
   display: flex;
   align-items: center;
@@ -195,6 +101,13 @@
   text-transform: uppercase;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
 }
+
 .linkComparte:visited {
   //background-color: $clicked-button;
+}
+
+@media all and (min-width: 768px) {
+  .buttonShare {
+    margin: 10px 30px 10px 30px;
+  }
 }

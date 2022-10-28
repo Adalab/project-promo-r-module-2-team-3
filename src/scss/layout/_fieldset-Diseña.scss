@@ -10,15 +10,16 @@
   color: $button-link;
 }
 
-.buttonDesign__arrow {
-  margin-right: 5px;
-  transform: scaleY(-1);
-}
-
 .buttonDesign {
   display: flex;
   justify-content: space-between;
-  margin: 27px 20px 22px 30px;
+  margin: 27px 25px 22px 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.buttonDesign__arrow {
+  transform: scaleY(-1);
 }
 
 .buttonDesign__title {
@@ -192,11 +193,7 @@
 
 @media all and (min-width: 768px) {
   .buttonDesign {
-    margin: 27px 20px 22px 30px;
-  }
-
-  .buttonDesign__arrow {
-    margin-right: 10px;
+    margin: 10px 30px 10px 30px;
   }
 
   .boxDesignColorsLabel {

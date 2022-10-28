@@ -29,7 +29,7 @@ const inputCardJob = document.querySelector(".js_card_job");
 const inputCardImg = document.querySelector(".js_card_img");
 const inputCardPhone = document.querySelector(".js_card_phone");
 const inputCardEmail = document.querySelector(".js_card_email");
-const inputCardSocial = document.querySelector(".js_card_social");
-const inputCardGit = document.querySelector(".js_card_git");
+const inputCardLinkedin = document.querySelector(".js_card_linkedin");
+const inputCardGithub = document.querySelector(".js_card_github");
 
 // Seccion comparte

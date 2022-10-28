@@ -1,11 +1,10 @@
 .buttonFill {
   display: flex;
   justify-content: space-between;
-  margin: 0px 20px 0px 20px;
+  margin: 27px 25px 22px 30px;
   padding-top: 15px;
   padding-bottom: 15px;
   &__arrow {
-    margin-right: 5px;
     transform: scaleY(-1);
   }
   &__title {

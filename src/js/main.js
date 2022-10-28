@@ -18,10 +18,10 @@ arrowDesign.addEventListener("click", () => {
   if (!mainDesign.classList.contains("hidden")) {
     mainShare.classList.add("hidden");
     fillForm.classList.add("hidden");
+    arrowFill.classList.add("arrowRotate");
+    arrowShare.classList.add("arrowRotate");
   }
-  if(arrowDesign.classList.toggle("arrowRotate")) {
-    arrowDesign.classList.add("arrowRotate");
-  }
+  
 });
 
 arrowFill.addEventListener("click", () => {
@@ -29,6 +29,8 @@ arrowFill.addEventListener("click", () => {
   if (!fillForm.classList.contains("hidden")) {
     mainShare.classList.add("hidden");
     mainDesign.classList.add("hidden");
+    arrowDesign.classList.add("arrowRotate");
+    arrowShare.classList.add("arrowRotate");
   }
 });
 
@@ -37,5 +39,7 @@ arrowShare.addEventListener("click", () => {
   if (!mainShare.classList.contains("hidden")) {
     fillForm.classList.add("hidden");
     mainDesign.classList.add("hidden");
+    arrowFill.classList.add("arrowRotate");
+    arrowDesign.classList.add("arrowRotate");
   }
 });
