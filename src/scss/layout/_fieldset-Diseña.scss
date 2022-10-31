@@ -1,3 +1,8 @@
+.design{
+  border-bottom: solid 1px $border-color;
+  margin: 27px 20px 10px 20px;
+}
+
 .fa fa-object-ungroup {
   color: $color-palette--orange;
 }
@@ -13,12 +18,12 @@
 .buttonDesign {
   display: flex;
   justify-content: space-between;
-  margin: 27px 25px 22px 30px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .buttonDesign__arrow {
+  padding-right: 10px;
   transform: scaleY(-1);
 }
 
@@ -28,6 +33,7 @@
   font-family: $font-Open;
   font-weight: 700;
   color: $text;
+  padding-left: 10px;
 }
 .boxDesignColorsLabel {
   display: flex;
@@ -98,12 +104,6 @@
   height: 25px;
   background-color: $border-icon;
   align-items: center;
-}
-
-.line__divider {
-  opacity: 0.6;
-  color: $border-color;
-  margin: 0px 20px 0px 20px;
 }
 
 //PALETA DE COLORES
@@ -192,9 +192,6 @@
 //TABLET
 
 @media all and (min-width: 768px) {
-  .buttonDesign {
-    margin: 10px 30px 10px 30px;
-  }
 
   .boxDesignColorsLabel {
     margin-left: 39px;

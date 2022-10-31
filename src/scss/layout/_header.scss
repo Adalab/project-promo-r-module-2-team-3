@@ -3,10 +3,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: rem(200) rem(35) rem(60) rem(35);
+  padding: rem(220) rem(35) rem(35.4) rem(35);
   @include tablet {
-    height: 30vh;
-    padding: rem(370) rem(174) rem(31) rem(175);
+    padding: rem(250) rem(175) rem(31) rem(175);
   }
   &__img {
     max-width: rem(250);

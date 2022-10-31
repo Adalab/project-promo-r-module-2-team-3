@@ -1,9 +1,7 @@
 .buttonFill {
   display: flex;
   justify-content: space-between;
-  margin: 27px 25px 22px 30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin: 0 10px 15px 10px;
   &__arrow {
     transform: scaleY(-1);
   }
@@ -15,7 +13,7 @@
     color: $text;
   }
   @media all and (min-width: 768px) {
-    margin: 10px 30px 10px 30px;
+    margin: 10px 10px 15px 10px;
   }
 }
 .fa-regular {
@@ -28,7 +26,7 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: left;
-  margin: 10px 20px 10px 20px;
+  margin: 0px 20px 10px 20px;
   &__infoLabel {
     color: $title-card-icons;
     font-size: rem(14);
@@ -68,4 +66,9 @@
   @media all and (min-width: 768px) {
     margin: 10px 30px 10px 40px;
   }
+}
+
+fieldset{
+  border-bottom: solid 1px $border-color;
+  margin: 0 20px 0 20px;
 }

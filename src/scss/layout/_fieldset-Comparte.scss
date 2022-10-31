@@ -13,23 +13,13 @@
 .buttonShare {
   display: flex;
   justify-content: space-between;
-  margin: 27px 25px 22px 30px;
+  padding-bottom: 15px;
+  padding-left: 10px;
 }
 
 .buttonShare__arrow {
   transform: scaleY(-1);
-}
-
-.line__divider1 {
-  opacity: 0.6;
-  color: $border-color;
-  margin: 0px 20px 0px 20px;
-}
-
-.line__divider2 {
-  opacity: 0.6;
-  color: $border-color;
-  margin: 0px 20px 30px 20px;
+  padding-right: 10px;
 }
 
 .buttonShare__title {
@@ -106,8 +96,7 @@
   //background-color: $clicked-button;
 }
 
-@media all and (min-width: 768px) {
-  .buttonShare {
-    margin: 10px 30px 10px 30px;
-  }
+.share{
+  border-bottom: solid 1px $border-color;
+  margin: 15px 20px 30px 20px;
 }

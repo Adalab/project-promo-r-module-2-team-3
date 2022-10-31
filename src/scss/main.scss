@@ -21,6 +21,12 @@
   font-family: $font-Open;
 }
 
+.body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .mainCreate {
   background-image: linear-gradient(
     to bottom,
