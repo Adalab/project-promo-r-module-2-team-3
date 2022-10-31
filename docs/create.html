@@ -38,12 +38,12 @@
                 <div class="card__article--photo js_card_img">
 
                 </div>
-                <ul class="card__article--links">
-                    <li><a class="js_card_phone" href=""><i class="fa-solid fa-mobile-screen-button icon"></i></a></li>
-                    <li><a class="js_card_email" href=""><i class="fa-regular fa-envelope icon"></i></a></li>
-                    <li><a class="js_card_social" href=""><i class="fa-brands fa-linkedin-in icon"></i></a></li>
-                    <li><a class="js_card_git" href=""><i class="fa-brands fa-github-alt icon"></i></a></li>
-                </ul>
+                <nav class="card__article--links">
+                    <a class="js_card_phone" href=""><i class="fa-solid fa-mobile-screen-button icon"></i></a>
+                    <a class="js_card_email" href=""><i class="fa-regular fa-envelope icon"></i></a>
+                    <a class="js_card_linkedin" href=""><i class="fa-brands fa-linkedin-in icon"></i></a>
+                    <a class="js_card_github" href=""><i class="fa-brands fa-github-alt icon"></i></a>
+                </nav>
             </article>
         </section>
         <section class="mainCreate__design">
@@ -131,46 +131,19 @@
                 <p class="buttonShare__title"><i class="fa-solid fa-share-nodes"></i> Comparte </p>
                 <img src="./assets/images/ico-scroll-down.svg" class="buttonShare__arrow js-arrow-share" alt="">
               </section>
-              <a href="#" class="buttonShare_cTa_Link js-share">
-                <div class="buttonShare_callToAction">
-                  <i class="fa-regular fa-address-card"></i>
-                  <p class="buttonShare_cTa_Text">Crear Tarjeta</p>
-                </div>
-              </a>
-              <hr class="line__divider2">
+              <section class="buttonComparte js-share">
+                <a href="" class="linkComparte"><i class="fa-regular fa-address-card"></i>Crear Tarjeta</a>
+              </section>
+
             </fieldset>
-
-
-            <!--CREAR TARJETA - BOTÓN CLIQUEADO-->
-
-            <a href="#" class="buttonShare_cTa_Link_clicked">
-              <div class="buttonShare_callToAction_clicked">
-                <i class="fa-regular fa-address-card"></i>
-                <p class="buttonShare_cTa_Text_clicked">Crear Tarjeta</p>
-              </div></a
-            >
-
-
             <hr class="line__divider2" />
-
-
-            <!--LA TARJETA HA SIDO CREADA-->
-
-            <div class="cardCreated">
-              <p class="cardCreated_text">La tarjeta ha sido creada:</p>
-              <p class="cardCreated_link">
-                https://https://awesome-profile-card.com/?id=AA56D
-              </p>
-            </div>
-
-
-            <!--BOTÓN TWITTER-->
-
-            <a href="#" class="buttonShare_cTa_Link_twitter">
-              <div class="buttonShare_callToAction_twitter">
-                <i class="fa-brands fa-twitter"></i>
-                <p class="buttonShare_cTa_Text_twitter">Compartir en twitter</p>
-              </div></a>
+            <section class="cardCreated">
+              <h3 class="cardCreated_text">La tarjeta ha sido creada:</h3>
+              <a class="cardCreated_link"
+                href="https://https://awesome-profile-card.com/?id=AA56D">https://https://awesome-profile-card.com/?id=AA56D</a>
+              <a class="cardCreated_button" href=""><i class="fa-brands fa-twitter"></i>Compartir en twitter</a>
+              <hr class="line__divider3" />
+            </section>
         </section>
     </main>
 
