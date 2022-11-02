@@ -10,12 +10,10 @@ resetBtn.addEventListener("click", (event) => {
   inputPhone.value = "";
   inputLinkedin.value = "";
   inputGithub.value = "";
-  /*inputCardName.innerHTML =;
-  inputCardJob.innerHTML = ´Front-end developer´;
-  inputCardImg. = "";
-  inputCardPhone.value = "";
-  inputCardEmail.value = "";
-  inputCardGithub.value = "";*/
-  inputCardName.reset();
-  inputCardJob.reset();
+  inputCardName.innerHTML = `Nombre Apellido`;
+  inputCardJob.innerHTML = `Front-end developer`;
+  inputCardPhone.href = "";
+  inputCardImg.src = "";
+  inputCardEmail.href = "";
+  inputCardGithub.href = "";
 });

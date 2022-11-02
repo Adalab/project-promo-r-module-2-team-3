@@ -29,7 +29,8 @@ let phone = '';
 let linkedin = '';
 let github = '';
 
-function updatePreview() {
+function updatePreview(event) {
+  event.preventDefault;
   if (name === '') {
     inputCardName.innerHTML = `Nombre Apellido`;
   } else {
@@ -57,19 +58,19 @@ function updatePreview() {
   if(email === '') {
     inputCardEmail.href = '' ;
   } else {
-    inputCardEmail.href = `mailto${email}`;
+    inputCardEmail.href = `mailto:${email}`;
   }
 
-  if(social === '') {
+  if(linkedin === '') {
     inputCardLinkedin.href = '' ;
   } else {
-    inputCardLinkedin.href = linkedin;
+    inputCardLinkedin.href = `https://www.linkedin.com/in/${linkedin}`;
   }
   
-  if(git === '') {
+  if(github === '') {
     inputCardGithub.href = '' ;
   } else {
-    inputCardGithub.href = github;
+    inputCardGithub.href = `https://www.github.com/${github}`;
   }
 };
 
@@ -102,6 +103,6 @@ fillForm.addEventListener('input', (event) => {
     github = value;
   }
 
-  updatePreview();
+  updatePreview(event);
 });
 

@@ -33,6 +33,7 @@
     $main-bg-color,
     $footer-bg-color 9%
   );
+  height: 100vh;
 
   @media all and (min-width: 768px) {
     display: grid;
@@ -42,7 +43,7 @@
       order: 1;
       margin: 20px 40px 21px 0;
       border-radius: 6px;
-      height: 81vh;
+      height: 87vh;
     }
   }
   @media all and (min-width: 1200px) {

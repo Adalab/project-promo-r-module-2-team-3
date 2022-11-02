@@ -29,7 +29,7 @@
 
     &--data {
       position: relative;
-      border-left: solid 5px $start-button;
+      border-left: solid 5px;
       .name {
         color: $title-card-icons;
         font-family: $font-Montse;
@@ -66,4 +66,41 @@
       }
     }
   }
+}
+
+.palette1 {
+  .name {
+    color: $title-card-icons;
+  };
+  .header-card {
+    color: $start-button;
+  };
+  .icon{
+    color: $title-card-icons;
+    border-color: $border-icon;
+  };
+}
+
+.palette2 {
+  .name {
+    color: $color-palette-blood;
+  };
+  .header-card {
+    color: $color-palette-red;
+  };
+  .icon{
+    border-color: $title-icons;
+    color: $color-palette-blood;
+  };
+}
+
+.palette3 {
+  .name {color: $color-palette-slate;
+  };
+  .header-card {color: $color-palette--orange;
+  };
+  .icon{
+    border-color:$color-palette--blue;
+    color: $color-palette-slate;
+  };
 }

@@ -22,6 +22,9 @@ const inputGithub = document.querySelector(".js_input_github");
 
 // Seccion diseña
 const cardArticle = document.querySelector(".js_card_article");
+const palette1Radius = document.querySelector('.js-palette1');
+const palette2Radius = document.querySelector('.js-palette2');
+const palette3Radius = document.querySelector('.js-palette3');
 
 // Seccion de la tarjeta
 const inputCardName = document.querySelector(".js_card_name");
@@ -33,3 +36,5 @@ const inputCardLinkedin = document.querySelector(".js_card_linkedin");
 const inputCardGithub = document.querySelector(".js_card_github");
 
 // Seccion comparte
+const cardCreated = document.querySelector('.js-cardCreated');
+const btnCreated = document.querySelector('.js-linkCreated');
