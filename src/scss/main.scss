@@ -21,7 +21,7 @@
   font-family: $font-Open;
 }
 
-.body{
+.body {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,6 @@
     $main-bg-color,
     $footer-bg-color 9%
   );
-  height: 100vh;
 
   @media all and (min-width: 768px) {
     display: grid;
