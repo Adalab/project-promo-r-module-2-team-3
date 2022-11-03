@@ -15,6 +15,7 @@ function showCardCreated(){
 }
 
 function handleClick(event){
+  
   event.preventDefault();
   showCardCreated();
   colorBtn();

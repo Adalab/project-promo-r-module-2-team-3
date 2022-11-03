@@ -15,7 +15,7 @@ fillForm.classList.add("hidden");
 //addEventListener
 
 
-arrowDesign.addEventListener("click", () => {
+designClick.addEventListener("click", () => {
   unfold(arrowDesign, mainDesign);
   if (!mainDesign.classList.contains("hidden")) {
     mainShare.classList.add("hidden");
@@ -23,10 +23,9 @@ arrowDesign.addEventListener("click", () => {
     arrowFill.classList.add("arrowRotate");
     arrowShare.classList.add("arrowRotate");
   }
-  
 });
 
-arrowFill.addEventListener("click", () => {
+fillClick.addEventListener("click", () => {
   unfold(arrowFill, fillForm);
   if (!fillForm.classList.contains("hidden")) {
     mainShare.classList.add("hidden");
@@ -36,7 +35,7 @@ arrowFill.addEventListener("click", () => {
   }
 });
 
-arrowShare.addEventListener("click", () => {
+shareClick.addEventListener("click", () => {
   unfold(arrowShare, mainShare);
   if (!mainShare.classList.contains("hidden")) {
     fillForm.classList.add("hidden");

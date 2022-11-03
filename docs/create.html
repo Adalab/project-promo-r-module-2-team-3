@@ -30,25 +30,25 @@
         <section class="mainCreate__card card">
             <button class="card__button js_reset-btn" title="Reset" name="Reset" type="button"><i class="far fa-trash-alt"></i>
                 Reset</button>
-            <article class="js_card_article card__article">
-                <div class="card__article--data">
+            <article class="js_card_article card__article palette1">
+                <div class="header-card card__article--data">
                     <h2 class="name js_card_name">Nombre apellido</h2>
                     <h3 class="text js_card_job">Front-end developer</h3>
                 </div>
-                <div class="card__article--photo js_card_img">
+                <div class="card__article--photo js_card_img js__profile-image">
 
                 </div>
                 <nav class="card__article--links">
                     <a class="js_card_phone" href=""><i class="fa-solid fa-mobile-screen-button icon"></i></a>
                     <a class="js_card_email" href=""><i class="fa-regular fa-envelope icon"></i></a>
-                    <a class="js_card_linkedin" href=""><i class="fa-brands fa-linkedin-in icon"></i></a>
-                    <a class="js_card_github" href=""><i class="fa-brands fa-github-alt icon"></i></a>
+                    <a class="js_card_linkedin" href="" target="_blank"><i class="fa-brands fa-linkedin-in icon"></i></a>
+                    <a class="js_card_github" href="" target="_blank"><i class="fa-brands fa-github-alt icon"></i></a>
                 </nav>
             </article>
         </section>
         <section class="mainCreate__design">
             <fieldset class="design">
-              <section class="buttonDesign">
+              <section class="buttonDesign js-designClick">
                 <p class="buttonDesign__title"><i class="fa-solid fa-object-ungroup"></i> Diseña </p>
                 <img src="./assets/images/ico-scroll-down.svg" class="buttonDesign__arrow js-arrow-design" alt="">
               </section>
@@ -59,7 +59,8 @@
                       Colores
                     </span></div>
                   <div class="colorPalette__container1">
-                    <input class="colorPalette__input1" type="radio" value="colorpalette1" name="colorpalette" />
+                    <input class="colorPalette__input1 js-palette1" type="radio" value="colorpalette1" name="colorpalette"
+                      checked />
                     <section class="colorsBoxOne">
                       <div class="rectangle__a1"></div>
                       <div class="rectangle__a2"></div>
@@ -69,7 +70,7 @@
                 </div>
 
                 <div class="colorPalette__container2">
-                  <input id="colorPalette__input2" type="radio" value="colorpalette2" name="colorpalette" />
+                  <input class="js-palette2 colorPalette__input2 " type="radio" value="colorpalette2" name="colorpalette" />
                   <section class="colorsBoxTwo">
                     <div class="rectangle__b1"></div>
                     <div class="rectangle__b2"></div>
@@ -78,7 +79,7 @@
                 </div>
 
                 <div class="colorPalette__container3">
-                  <input id="colorPalette__input3" type="radio" value="colorpalette3" name="colorpalette" />
+                  <input class="js-palette3 colorPalette__input3" type="radio" value="colorpalette3" name="colorpalette" />
                   <section class="colorsBoxThree">
                     <div class="rectangle__c1"></div>
                     <div class="rectangle__c2"></div>
@@ -86,75 +87,79 @@
                   </section>
                 </div>
               </main>
-              <hr class="line__divider">
             </fieldset>
             <fieldset>
 
-                <div class="buttonFill">
+                <div class="buttonFill js-fillClick">
                     <legend class="buttonFill__title"><i class="fa-regular fa-keyboard"></i>Rellena</legend>
-                    <img src="./assets/images/ico-scroll-down.svg" class="js-arrow-fill buttonFill__arrow" alt="">
+                    <img src="./assets/images/ico-scroll-down.svg" class="buttonFill__arrow js-arrow-fill" alt="">
                 </div>
 
                 <form action="" class="fill js-fill">
                     <label for="full_name" class="fill__infoLabel">Nombre completo</label>
-                    <input type="text" id="full_name" name="name" class="fill__infoInput js_input_name" placeholder="Nombre Apellido" required
-                        autocomplete="name">
+                    <input type="text" id="full_name" name="name" class="fill__infoInput js_input_name"
+                        placeholder="Nombre Apellido" required autocomplete="name">
 
                     <label for="job" class="fill__infoLabel">Puesto</label>
-                    <input type="text" id="job" name="job" class="fill__infoInput js_input_job" placeholder="Full stack developer" required>
+                    <input type="text" id="job" name="job" class="fill__infoInput js_input_job" placeholder="Full stack developer"
+                        required>
 
                     <label for="imageForm" class="fill__infoLabel">Imagen de perfil</label>
-                    <div class="fill__action">
+                    <div class="fill__action ">
                         <label for="imageForm" class="fill__infoLabel fill__action--labelInput">Añadir imagen</label>
-                        <input type="file" accept="image/*" class="fill__infoInput fill__action--imageInput js_input_img" id="imageForm" name="img">
-                        <div class="fill__action--preview"> </div>
+                        <input type="file" accept="image/*"
+                            class="fill__infoInput fill__action--imageInput js_input_img js__profile-upload-btn" id="imageForm"
+                            name="img">
+                        <div class="fill__action--preview js__profile-preview"> </div>
                     </div>
 
                     <label for="email" class="fill__infoLabel">Email</label>
-                    <input type="email" id="email" name="email" class="fill__infoInput js_input_email" placeholder="ejemplo@dominio.tld" required
-                        autocomplete="email">
+                    <input type="email" id="email" name="email" class="fill__infoInput js_input_email"
+                        placeholder="ejemplo@dominio.tld" required autocomplete="email">
 
                     <label for="phone" class="fill__infoLabel">Teléfono</label>
-                    <input type="tel" id="phone"  name="phone" class="fill__infoInput js_input_phone" placeholder="XXXXXXXXX" autocomplete="tel">
+                    <input type="tel" id="phone" name="phone" class="fill__infoInput js_input_phone" placeholder="XXXXXXXXX"
+                        autocomplete="tel">
 
                     <label for="linkedin" class="fill__infoLabel">Linkedin</label>
-                    <input type="text" id="linkedin" name="linkedin" class="fill__infoInput js_input_linkedin" placeholder="linkedin.com/in/usuario"
+                    <input type="text" id="linkedin" name="linkedin" class="fill__infoInput js_input_linkedin" placeholder="usuario"
                         autocomplete="url">
 
                     <label for="github" class="fill__infoLabel">Github</label>
-                    <input type="text" id="github" name="github" class="fill__infoInput js_input_github" placeholder="@usuario" autocomplete="url">
+                    <input type="text" id="github" name="github" class="fill__infoInput js_input_github" placeholder="usuario"
+                        autocomplete="url">
                 </form>
             </fieldset>
             <fieldset class="share">
-              <hr class="line__divider1">
-              <section class="buttonShare">
+              <section class="buttonShare js-shareClick">
                 <p class="buttonShare__title"><i class="fa-solid fa-share-nodes"></i> Comparte </p>
                 <img src="./assets/images/ico-scroll-down.svg" class="buttonShare__arrow js-arrow-share" alt="">
               </section>
+
               <section class="buttonComparte js-share">
-                <a href="" class="linkComparte"><i class="fa-regular fa-address-card"></i>Crear Tarjeta</a>
+                <a href="" class="linkComparte js-linkCreated"><i class="fa-regular fa-address-card"></i>Crear Tarjeta</a>
+                <article class="cardCreated js-cardCreated hidden js-share">
+                  <h3 class="cardCreated_text">La tarjeta ha sido creada:</h3>
+                  <a class="cardCreated_link"
+                    href="https://https://awesome-profile-card.com/?id=AA56D">https://https://awesome-profile-card.com/?id=AA56D</a>
+                  <a class="cardCreated_button js-CardCreated_button " href=""><i class="fa-brands fa-twitter"></i>Compartir en
+                    twitter</a>
+                </article>
+
               </section>
 
             </fieldset>
-            <hr class="line__divider2" />
-            <section class="cardCreated">
-              <h3 class="cardCreated_text">La tarjeta ha sido creada:</h3>
-              <a class="cardCreated_link"
-                href="https://https://awesome-profile-card.com/?id=AA56D">https://https://awesome-profile-card.com/?id=AA56D</a>
-              <a class="cardCreated_button" href=""><i class="fa-brands fa-twitter"></i>Compartir en twitter</a>
-              <hr class="line__divider3" />
-            </section>
         </section>
     </main>
 
-    <footer>
-        <footer class="footer">
 
-            <small class="footer__small">Awesome profile-cards &copy; 2018</small>
-            <img src="./assets/images/logo-adalab.png" class="footer__img" alt="Logo Adalab" />
+    <footer class="footer">
 
-        </footer>
+        <small class="footer__small">Awesome profile-cards &copy; 2018</small>
+        <img src="./assets/images/logo-adalab.png" class="footer__img" alt="Logo Adalab" />
+
     </footer>
+
 
     <script src="./assets/js/main.js"></script>
 

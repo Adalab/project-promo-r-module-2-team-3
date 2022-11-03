@@ -9,6 +9,9 @@ const arrowShare = document.querySelector(".js-arrow-share");
 const mainDesign = document.querySelector(".js-design");
 const fillForm = document.querySelector(".js-fill");
 const mainShare = document.querySelector(".js-share");
+const fillClick = document.querySelector('.js-fillClick');
+const designClick = document.querySelector('.js-designClick');
+const shareClick = document.querySelector(".js-shareClick");
 
 // Seccion formulario rellena
 const resetBtn = document.querySelector(".js_reset-btn");

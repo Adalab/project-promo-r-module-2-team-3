@@ -16,4 +16,8 @@ resetBtn.addEventListener("click", (event) => {
   inputCardImg.src = "";
   inputCardEmail.href = "";
   inputCardGithub.href = "";
+  profileImage.style.backgroundImage = ``;
+  profilePreview.style.backgroundImage = ``;
+  cardCreated.classList.add('hidden');
+  btnCreated.classList.remove('linkgrey');
 });
