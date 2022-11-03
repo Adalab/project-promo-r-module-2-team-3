@@ -2,22 +2,14 @@
 /* eslint-disable no-trailing-spaces */
 'use strict';
 
-palette1Radius.addEventListener('click', () =>{
+const functionSelectColor = (event) => {
   cardArticle.classList.remove('palette1');
   cardArticle.classList.remove('palette2');
   cardArticle.classList.remove('palette3');
-  cardArticle.classList.add('palette1');
-});
-palette2Radius.addEventListener('click', () =>{
-  cardArticle.classList.remove ('palette1');
-  cardArticle.classList.remove ('palette2');
-  cardArticle.classList.remove ('palette3');
-  cardArticle.classList.add ('palette2');
-    
-});
-palette3Radius.addEventListener('click', () =>{
-  cardArticle.classList.remove('palette1');
-  cardArticle.classList.remove('palette2');
-  cardArticle.classList.remove('palette3');
-  cardArticle.classList.add('palette3');
-});
+  cardArticle.classList.add(event.currentTarget.value); 
+};
+palette1Radius.addEventListener('click', functionSelectColor);
+
+palette2Radius.addEventListener('click', functionSelectColor);
+
+palette3Radius.addEventListener('click', functionSelectColor);
