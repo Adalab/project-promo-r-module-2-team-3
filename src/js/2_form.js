@@ -21,56 +21,57 @@
 // const inputCardSocial = document.querySelector(".js_card_social");
 // const inputCardGit = document.querySelector(".js_card_git");
 
-let name = '';
-let job = '';
-let img = '';
-let email = '';
-let phone = '';
-let linkedin = '';
-let github = '';
+const userData = {
+name : '',
+job : '',
+photo : '',
+email : '',
+phone : '',
+linkedin : '',
+github : '',
+};
 
-function updatePreview(event) {
-  event.preventDefault;
-  if (name === '') {
+function updatePreview() {
+  if (userData.name === '') {
     inputCardName.innerHTML = `Nombre Apellido`;
   } else {
-    inputCardName.innerHTML = name;
+    inputCardName.innerHTML = userData.name;
   }
   
-  if (job === '') {
+  if (userData.job === '') {
     inputCardJob.innerHTML = `Front-End developer`;
   } else {
-    inputCardJob.innerHTML = job;
+    inputCardJob.innerHTML = userData.job;
   }
   
-  if(img === '') {
+  if(userData.photo === '') {
     inputCardImg.src = '' ;
   } else {
-    inputCardImg.src = img;
+    inputCardImg.src = userData.photo;
   }
  
-  if(phone === '') {
+  if(userData.phone === '') {
     inputCardPhone.href = '' ;
   } else {
-    inputCardPhone.href = `tel:${phone}`;
+    inputCardPhone.href = `tel:${userData.phone}`;
   } 
   
-  if(email === '') {
+  if(userData.email === '') {
     inputCardEmail.href = '' ;
   } else {
-    inputCardEmail.href = `mailto:${email}`;
+    inputCardEmail.href = `mailto:${userData.email}`;
   }
 
-  if(linkedin === '') {
+  if(userData.linkedin === '') {
     inputCardLinkedin.href = '' ;
   } else {
-    inputCardLinkedin.href = `https://www.linkedin.com/in/${linkedin}`;
+    inputCardLinkedin.href = `https://www.linkedin.com/in/${userData.linkedin}`;
   }
   
-  if(github === '') {
+  if(userData.github === '') {
     inputCardGithub.href = '' ;
   } else {
-    inputCardGithub.href = `https://www.github.com/${github}`;
+    inputCardGithub.href = `https://www.github.com/${userData.github}`;
   }
 };
 
@@ -82,27 +83,27 @@ fillForm.addEventListener('input', (event) => {
   const value = event.target.value;
 
   if (elementName === 'name'){
-    name = value;
+    userData.name = value;
   }
   if (elementName === 'job'){
-    job = value;
+    userData.job = value;
   }
-  if (elementName === 'img'){
-    img = value;
+  if (elementName === 'photo'){
+    userData.photo = value;
   }
   if (elementName === 'phone'){
-    phone = value;
+    userData.phone = value;
   }
   if (elementName === 'email'){
-    email = value;
+    userData.email = value;
   }
   if (elementName === 'linkedin'){
-    linkedin = value;
+    userData.linkedin = value;
   }
   if (elementName === 'github'){
-    github = value;
+    userData.github = value;
   }
 
-  updatePreview(event);
+  updatePreview();
 });
 

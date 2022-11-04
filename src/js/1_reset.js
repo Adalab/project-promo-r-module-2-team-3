@@ -3,13 +3,10 @@
 'use strict';
 resetBtn.addEventListener("click", (event) => {
   event.preventDefault();
-  inputName.value = "";
-  inputJob.value = "";
-  inputImg.value = "";
-  inputEmail.value = "";
-  inputPhone.value = "";
-  inputLinkedin.value = "";
-  inputGithub.value = "";
+  for (const input of inputReset) {
+    input.value = "";
+  }
+
   inputCardName.innerHTML = `Nombre Apellido`;
   inputCardJob.innerHTML = `Front-end developer`;
   inputCardPhone.href = "";
@@ -20,4 +17,14 @@ resetBtn.addEventListener("click", (event) => {
   profilePreview.style.backgroundImage = ``;
   cardCreated.classList.add('hidden');
   btnCreated.classList.remove('linkgrey');
+  cardArticle.classList.add('palette1');
+  cardArticle.classList.remove('palette2');
+  cardArticle.classList.remove('palette3');
+  deselectAll();
+  palette1Radius.checked = true;
 });
+
+function deselectAll(){
+  const all = document.getElementsByName("colorpalette");
+  all.forEach(item => item.checked = false);
+}

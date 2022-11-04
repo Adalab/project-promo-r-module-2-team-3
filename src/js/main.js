@@ -5,12 +5,23 @@
 
 //Funciones
 const unfold = (arrow, content) => {
-  arrow.classList.toggle("arrowRotate");
-  content.classList.toggle("hidden");
+  if ((!fillForm.classList.contains('hidden') || !mainShare.classList.contains('hidden')) && content.classList.contains('js-design')) {
+    arrow.classList.toggle("arrowRotate");
+    content.classList.toggle("hidden");
+  } else if ((!mainDesign.classList.contains('hidden') || !mainShare.classList.contains('hidden')) && content.classList.contains('js-fill')) {
+    arrow.classList.toggle("arrowRotate");
+    content.classList.toggle("hidden");
+  } else if ((!fillForm.classList.contains('hidden') || !mainDesign.classList.contains('hidden')) && content.classList.contains('js-share')) {
+    arrow.classList.toggle("arrowRotate");
+    content.classList.toggle("hidden");
+  }
+  console.log(content);
 };
 
 mainShare.classList.add("hidden");
 fillForm.classList.add("hidden");
+arrowFill.classList.add("arrowRotate");
+arrowShare.classList.add("arrowRotate");
 
 //addEventListener
 

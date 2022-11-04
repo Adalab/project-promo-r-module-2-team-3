@@ -15,13 +15,7 @@ const shareClick = document.querySelector(".js-shareClick");
 
 // Seccion formulario rellena
 const resetBtn = document.querySelector(".js_reset-btn");
-const inputName = document.querySelector(".js_input_name");
-const inputJob = document.querySelector(".js_input_job");
-const inputImg = document.querySelector(".js_input_img");
-const inputEmail = document.querySelector(".js_input_email");
-const inputPhone = document.querySelector(".js_input_phone");
-const inputLinkedin = document.querySelector(".js_input_linkedin");
-const inputGithub = document.querySelector(".js_input_github");
+const inputReset = document.querySelectorAll(".js_inputReset");
 
 // Seccion diseña
 const cardArticle = document.querySelector(".js_card_article");
