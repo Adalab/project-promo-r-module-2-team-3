@@ -48,11 +48,13 @@
       }
     }
     &--photo {
-      background: url(https://simbei.com/wp-content/uploads/2016/09/simbei_escaparate_farmacia_vueltalcole_1.jpg)
-        top no-repeat;
+      background: url(https://simbei.com/wp-content/uploads/2016/09/simbei_escaparate_farmacia_vueltalcole_1.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
       height: 200px;
+      width: 240px;
       margin: 10px 0;
-      object-fit: cover;
     }
     &--links {
       display: flex;

@@ -7,6 +7,7 @@
   align-items: center;
   padding: rem(18) rem(61) rem(20) rem(61);
   border-top: 1px solid $border-color;
+  height: 8vh;
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
