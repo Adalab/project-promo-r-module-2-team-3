@@ -59,8 +59,8 @@
                       Colores
                     </span></div>
                   <div class="colorPalette__container1">
-                    <input class="colorPalette__input1 js-palette1" type="radio" value="colorpalette1" name="colorpalette"
-                      checked />
+                    <input id="palette1" class="colorPalette__input1 js-palette1" type="radio" value="1" name="colorpalette"
+                      checked="true"/>
                     <section class="colorsBoxOne">
                       <div class="rectangle__a1"></div>
                       <div class="rectangle__a2"></div>
@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="colorPalette__container2">
-                  <input class="js-palette2 colorPalette__input2 " type="radio" value="colorpalette2" name="colorpalette" />
+                  <input id="palette2" class="js-palette2 colorPalette__input2 " type="radio" value="2" name="colorpalette" />
                   <section class="colorsBoxTwo">
                     <div class="rectangle__b1"></div>
                     <div class="rectangle__b2"></div>
@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="colorPalette__container3">
-                  <input class="js-palette3 colorPalette__input3" type="radio" value="colorpalette3" name="colorpalette" />
+                  <input id="palette3" class="js-palette3 colorPalette__input3" type="radio" value="3" name="colorpalette" />
                   <section class="colorsBoxThree">
                     <div class="rectangle__c1"></div>
                     <div class="rectangle__c2"></div>
@@ -97,36 +97,36 @@
 
                 <form action="" class="fill js-fill">
                     <label for="full_name" class="fill__infoLabel">Nombre completo</label>
-                    <input type="text" id="full_name" name="name" class="fill__infoInput js_input_name"
+                    <input type="text" id="full_name" name="name" class="fill__infoInput js_input_name js_inputReset"
                         placeholder="Nombre Apellido" required autocomplete="name">
 
                     <label for="job" class="fill__infoLabel">Puesto</label>
-                    <input type="text" id="job" name="job" class="fill__infoInput js_input_job" placeholder="Full stack developer"
+                    <input type="text" id="job" name="job" class="fill__infoInput js_input_job js_inputReset" placeholder="Full stack developer"
                         required>
 
                     <label for="imageForm" class="fill__infoLabel">Imagen de perfil</label>
                     <div class="fill__action ">
                         <label for="imageForm" class="fill__infoLabel fill__action--labelInput">Añadir imagen</label>
                         <input type="file" accept="image/*"
-                            class="fill__infoInput fill__action--imageInput js_input_img js__profile-upload-btn" id="imageForm"
+                            class="fill__infoInput fill__action--imageInput js_input_img js__profile-upload-btn js_inputReset" id="imageForm"
                             name="img">
                         <div class="fill__action--preview js__profile-preview"> </div>
                     </div>
 
                     <label for="email" class="fill__infoLabel">Email</label>
-                    <input type="email" id="email" name="email" class="fill__infoInput js_input_email"
+                    <input type="email" id="email" name="email" class="fill__infoInput js_input_email js_inputReset"
                         placeholder="ejemplo@dominio.tld" required autocomplete="email">
 
                     <label for="phone" class="fill__infoLabel">Teléfono</label>
-                    <input type="tel" id="phone" name="phone" class="fill__infoInput js_input_phone" placeholder="XXXXXXXXX"
+                    <input type="tel" id="phone" name="phone" class="fill__infoInput js_input_phone js_inputReset" placeholder="XXXXXXXXX"
                         autocomplete="tel">
 
                     <label for="linkedin" class="fill__infoLabel">Linkedin</label>
-                    <input type="text" id="linkedin" name="linkedin" class="fill__infoInput js_input_linkedin" placeholder="usuario"
+                    <input type="text" id="linkedin" name="linkedin" class="fill__infoInput js_input_linkedin js_inputReset" placeholder="usuario"
                         autocomplete="url">
 
                     <label for="github" class="fill__infoLabel">Github</label>
-                    <input type="text" id="github" name="github" class="fill__infoInput js_input_github" placeholder="usuario"
+                    <input type="text" id="github" name="github" class="fill__infoInput js_input_github js_inputReset" placeholder="usuario"
                         autocomplete="url">
                 </form>
             </fieldset>
@@ -139,10 +139,11 @@
               <section class="buttonComparte js-share">
                 <a href="" class="linkComparte js-linkCreated"><i class="fa-regular fa-address-card"></i>Crear Tarjeta</a>
                 <article class="cardCreated js-cardCreated hidden js-share">
-                  <h3 class="cardCreated_text">La tarjeta ha sido creada:</h3>
-                  <a class="cardCreated_link"
-                    href="https://https://awesome-profile-card.com/?id=AA56D">https://https://awesome-profile-card.com/?id=AA56D</a>
-                  <a class="cardCreated_button js-CardCreated_button " href=""><i class="fa-brands fa-twitter"></i>Compartir en
+                  <h3 class="cardCreated_text js-textError"></h3>
+                  <a class="cardCreated_link js-shareUrl"
+                    href="" target="_blank"></a>
+                  <a class="cardCreated_button js-twitter hidden" href="https://twitter.com/intent/tweet?text="
+                    target="_blank"><i class="fa-brands fa-twitter"></i>Compartir en
                     twitter</a>
                 </article>
 
