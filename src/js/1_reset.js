@@ -22,6 +22,9 @@ resetBtn.addEventListener("click", (event) => {
   cardArticle.classList.remove('palette3');
   deselectAll();
   palette1Radius.checked = true;
+  twitter.classList.add('hidden');
+  linkshare.href = '';
+  linkshare.innerHTML = ''; 
 });
 
 function deselectAll(){

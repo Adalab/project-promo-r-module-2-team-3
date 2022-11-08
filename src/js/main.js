@@ -15,7 +15,6 @@ const unfold = (arrow, content) => {
     arrow.classList.toggle("arrowRotate");
     content.classList.toggle("hidden");
   }
-  console.log(content);
 };
 
 mainShare.classList.add("hidden");

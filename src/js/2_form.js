@@ -3,32 +3,15 @@
 /* eslint-disable no-undef */
 'use strict';
 
-// Seccion formulario rellena
-// const inputName = document.querySelector(".js_input_name");
-// const inputJob = document.querySelector(".js_input_job");
-// const inputImg = document.querySelector(".js_input_img");
-// const inputEmail = document.querySelector(".js_input_email");
-// const inputPhone = document.querySelector(".js_input_phone");
-// const inputSocial = document.querySelector(".js_input_social");
-// const inputGit = document.querySelector(".js_input_git");
-
-// Seccion de la tarjeta
-// const inputCardName = document.querySelector(".js_card_name");
-// const inputCardJob = document.querySelector(".js_card_job");
-// const inputCardImg = document.querySelector(".js_card_img");
-// const inputCardPhone = document.querySelector(".js_card_phone");
-// const inputCardEmail = document.querySelector(".js_card_email");
-// const inputCardSocial = document.querySelector(".js_card_social");
-// const inputCardGit = document.querySelector(".js_card_git");
-
 const userData = {
-name : '',
-job : '',
-photo : '',
-email : '',
-phone : '',
-linkedin : '',
-github : '',
+  palette: '',
+  name : '',
+  job : '',
+  photo : '',
+  email : '',
+  phone : '',
+  linkedin : '',
+  github : '',
 };
 
 function updatePreview() {

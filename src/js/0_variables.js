@@ -3,9 +3,9 @@
 "use strict";
 
 // Seccion desplegables
-const arrowDesign = document.querySelector(".js-arrow-design");
-const arrowFill = document.querySelector(".js-arrow-fill");
-const arrowShare = document.querySelector(".js-arrow-share");
+const arrowDesign = document.querySelector('.js-arrow-design');
+const arrowFill = document.querySelector('.js-arrow-fill');
+const arrowShare = document.querySelector('.js-arrow-share');
 const mainDesign = document.querySelector(".js-design");
 const fillForm = document.querySelector(".js-fill");
 const mainShare = document.querySelector(".js-share");
@@ -35,3 +35,6 @@ const inputCardGithub = document.querySelector(".js_card_github");
 // Seccion comparte
 const cardCreated = document.querySelector('.js-cardCreated');
 const btnCreated = document.querySelector('.js-linkCreated');
+const linkshare = document.querySelector('.js-shareUrl');
+const textError = document.querySelector('.js-textError');
+const twitter = document.querySelector('.js-twitter');

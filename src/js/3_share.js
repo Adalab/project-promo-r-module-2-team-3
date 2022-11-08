@@ -15,10 +15,10 @@ function showCardCreated(){
 }
 
 function handleClick(event){
-  
   event.preventDefault();
   showCardCreated();
   colorBtn();
+  localCard();
 }
 
 btnCreated.addEventListener('click', handleClick);

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 'use strict';
 
 const fr = new FileReader();
@@ -33,6 +34,7 @@ function writeImage() {
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  userData.photo = fr.result;
 }
 
 
