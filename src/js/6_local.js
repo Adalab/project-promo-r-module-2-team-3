@@ -28,6 +28,8 @@ function localCard(){
         linkshare.innerHTML = cardUrl; 
         linkshare.href = cardUrl;
     }else{
+        cardCreated.style = 'border-top: solid 1px $border-color;';
+        linkshare.style = 'display: block;';
         textError.innerHTML = 'Faltan datos por rellenar, no seas vago.';  
     }
   });
