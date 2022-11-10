@@ -4,7 +4,7 @@
 'use strict';
 
 const userData = {
-  palette: '',
+  palette: '1',
   name : '',
   job : '',
   photo : '',

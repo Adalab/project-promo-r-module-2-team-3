@@ -24,7 +24,10 @@ function localCard(){
     if (responseJson.success) {
         cardUrl = responseJson.cardURL;
         textError.innerHTML = 'La tarjeta ha sido creada:';
+        cardCreated.classList.remove('hidden');
         twitter.classList.remove('hidden');
+        cardCreated.style = 'display: flex';
+        linkshare.style = 'display: block;';
         linkshare.innerHTML = cardUrl; 
         linkshare.href = cardUrl;
     }else{
