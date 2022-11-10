@@ -24,7 +24,6 @@ function localCard(){
   .then(responseJson =>{
     if (responseJson.success) {
         cardUrl = responseJson.cardURL;
-        cardCreated.classList.remove('hidden');
         textError.innerHTML = 'La tarjeta ha sido creada:';
         cardCreated.classList.remove('hidden');
         twitter.classList.remove('hidden');
