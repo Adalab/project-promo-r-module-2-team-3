@@ -12,6 +12,7 @@
 let cardUrl;
 
 function localCard(){
+ 
     fetch('https://awesome-profile-cards.herokuapp.com/card', {
   method: 'POST', // Para enviar datos
   body: JSON.stringify(userData),
@@ -23,6 +24,7 @@ function localCard(){
   .then(responseJson =>{
     if (responseJson.success) {
         cardUrl = responseJson.cardURL;
+        cardCreated.classList.remove('hidden');
         textError.innerHTML = 'La tarjeta ha sido creada:';
         cardCreated.classList.remove('hidden');
         twitter.classList.remove('hidden');
@@ -30,6 +32,7 @@ function localCard(){
         linkshare.style = 'display: block;';
         linkshare.innerHTML = cardUrl; 
         linkshare.href = cardUrl;
+        twitter.href = `https://twitter.com/intent/tweet?text=Nueva%20tarjeta%20creada%20${cardUrl}`;
     }else{
         cardCreated.style = 'border-top: solid 1px $border-color;';
         linkshare.style = 'display: block;';
@@ -37,3 +40,4 @@ function localCard(){
     }
   });
 }
+

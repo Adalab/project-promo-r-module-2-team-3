@@ -2,11 +2,6 @@
 'use strict';
 
 
-/*Seccion comparte
-const cardCreated = document.querySelector('.js-cardCreated');
-const btnCreated = document.querySelector('.js-linkCreated');*/
-
-
 function colorBtn(){
   btnCreated.classList.add('linkgrey');
 }

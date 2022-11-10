@@ -27,8 +27,6 @@ arrowShare.classList.add("arrowRotate");
 
 designClick.addEventListener("click", () => {
   unfold(arrowDesign, mainDesign);
-  cardCreated.style = 'display: none';
-  linkshare.style = 'display: none;';
   if (!mainDesign.classList.contains("hidden")) {
     mainShare.classList.add("hidden");
     fillForm.classList.add("hidden");
@@ -39,8 +37,6 @@ designClick.addEventListener("click", () => {
 
 fillClick.addEventListener("click", () => {
   unfold(arrowFill, fillForm);
-  cardCreated.style = 'display: none';
-  linkshare.style = 'display: none;';
   if (!fillForm.classList.contains("hidden")) {
     mainShare.classList.add("hidden");
     mainDesign.classList.add("hidden");
@@ -51,8 +47,6 @@ fillClick.addEventListener("click", () => {
 
 shareClick.addEventListener("click", () => {
   unfold(arrowShare, mainShare);
-  btnCreated.classList.remove('linkgrey');
-  textError.innerHTML = ''; 
   if (!mainShare.classList.contains("hidden")) {
     fillForm.classList.add("hidden");
     mainDesign.classList.add("hidden");
