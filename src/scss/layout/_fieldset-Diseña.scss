@@ -1,4 +1,4 @@
-.design{
+.design {
   border-bottom: solid 1px $border-color;
   margin: 27px 20px 10px 20px;
 }
@@ -38,7 +38,7 @@
 .boxDesignColorsLabel {
   display: flex;
   justify-content: flex-start;
-  margin-left: 39px;
+  margin-left: 24px;
   align-items: center;
 }
 
@@ -81,7 +81,7 @@
   display: flex;
   flex-direction: row;
   justify-content: right;
-  margin: 10px 0px 10px 10px;
+  margin: 10px -15px 10px 10px;
 }
 
 .rectangle__a1 {
@@ -124,7 +124,7 @@
   display: flex;
   flex-direction: row;
   justify-content: right;
-  margin: 10px 0px 10px 10px;
+  margin: 10px -30px 10px 10px;
 }
 
 .rectangle__b1 {
@@ -164,7 +164,7 @@
   display: flex;
   flex-direction: row;
   justify-content: right;
-  margin: 10px 0px 30px 10px;
+  margin: 10px -30px 30px 10px;
 }
 
 .rectangle__c1 {
@@ -192,9 +192,8 @@
 //TABLET
 
 @media all and (min-width: 768px) {
-
   .boxDesignColorsLabel {
-    margin-left: 39px;
+    margin-left: 8px;
   }
 
   //PALETA DE COLORES
@@ -215,4 +214,3 @@
     justify-content: right;
   }
 }
-
