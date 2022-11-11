@@ -15,13 +15,13 @@ resetBtn.addEventListener("click", (event) => {
   inputCardGithub.href = "";
   profileImage.style.backgroundImage = ``;
   profilePreview.style.backgroundImage = ``;
-  cardCreated.classList.add('hidden');
   btnCreated.classList.remove('linkgrey');
   cardArticle.classList.add('palette1');
   cardArticle.classList.remove('palette2');
   cardArticle.classList.remove('palette3');
   deselectAll();
   palette1Radius.checked = true;
+  cardCreated.style = 'display: none';
   twitter.classList.add('hidden');
   linkshare.href = '';
   linkshare.innerHTML = '';
