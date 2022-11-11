@@ -26,6 +26,7 @@
     box-shadow: 0 1px 10px 0 $black, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
     border-radius: 2px;
     margin-bottom: 40px;
+    width: 240px;
 
     &--data {
       position: relative;
@@ -53,6 +54,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       height: 200px;
+      width: 240px;
       margin: 10px 0;
     }
     &--links {
@@ -73,38 +75,36 @@
 .palette1 {
   .name {
     color: $title-card-icons;
-  }
+  };
   .header-card {
     color: $start-button;
-  }
-  .icon {
+  };
+  .icon{
     color: $title-card-icons;
     border-color: $border-icon;
-  }
+  };
 }
 
 .palette2 {
   .name {
     color: $color-palette-blood;
-  }
+  };
   .header-card {
     color: $color-palette-red;
-  }
-  .icon {
+  };
+  .icon{
     border-color: $title-icons;
     color: $color-palette-blood;
-  }
+  };
 }
 
 .palette3 {
-  .name {
+  .name {color: $color-palette-slate;
+  };
+  .header-card {color: $color-palette--orange;
+  };
+  .icon{
+    border-color:$color-palette--blue;
     color: $color-palette-slate;
-  }
-  .header-card {
-    color: $color-palette--orange;
-  }
-  .icon {
-    border-color: $color-palette--blue;
-    color: $color-palette-slate;
-  }
+  };
 }
