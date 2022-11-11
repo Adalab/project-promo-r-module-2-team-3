@@ -24,7 +24,8 @@ resetBtn.addEventListener("click", (event) => {
   palette1Radius.checked = true;
   twitter.classList.add('hidden');
   linkshare.href = '';
-  linkshare.innerHTML = ''; 
+  linkshare.innerHTML = '';
+  textError.innerHTML = '';
 });
 
 function deselectAll(){
