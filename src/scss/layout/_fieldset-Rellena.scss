@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 10px 15px 10px;
+  cursor: pointer;
   &__arrow {
     transform: scaleY(-1);
   }

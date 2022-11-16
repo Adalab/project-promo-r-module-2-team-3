@@ -76,6 +76,7 @@
   border-radius: 21px;
   width: 129px;
   height: 42px;
+  transition: 0.5s ease-in-out;
 
   &__link {
     position: absolute;
@@ -127,3 +128,26 @@
 body {
   height: 100vh;
 }
+
+.btn:hover{
+  transition: all 0.8s ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    #E96D34,
+    #E97934,
+    #F0CC89,
+    #F68435,
+  );
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  background-size: 300% 100%;
+  cursor: pointer;
+  }
+
+  .btn:hover:hover {
+    background-position: 100% 0;
+    transition: all 0.8s ease-in-out;
+  }
+
+  .btn:hover:focus {
+    outline: none;
+  }
