@@ -59,3 +59,4 @@ shareClick.addEventListener("click", () => {
     arrowDesign.classList.add("arrowRotate");
   }
 });
+
