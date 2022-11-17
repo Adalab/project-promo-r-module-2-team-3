@@ -1,18 +1,18 @@
 .design {
-  border-bottom: solid 1px $border-color;
+  border-bottom: solid 1px rgb(2, 65, 2);
   margin: 27px 20px 10px 20px;
 }
 
 .fa fa-object-ungroup {
-  color: $color-palette--orange;
+  color: black;
 }
 
 .fa-solid {
-  color: $button-link;
+  color: black;
 }
 
 .fa-angle-u {
-  color: $button-link;
+  color: black;
 }
 
 .buttonDesign {
@@ -47,8 +47,8 @@
   text-transform: uppercase;
   font-size: rem(14);
   font-family: $font-Open;
-  font-weight: 500;
-  color: $text;
+  font-weight: 700;
+  color: rgb(247, 182, 6);
 }
 
 //PALETA DE COLORES
