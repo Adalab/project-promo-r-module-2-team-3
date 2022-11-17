@@ -2,7 +2,6 @@
 /* eslint-disable no-empty */
 /* eslint-disable no-undef */
 'use strict';
-
 const userData = {
   palette: '1',
   name : '',
@@ -56,6 +55,7 @@ function updatePreview() {
   } else {
     inputCardGithub.href = `https://www.github.com/${userData.github}`;
   }
+ 
 };
 
 
@@ -64,7 +64,7 @@ fillForm.addEventListener('input', (event) => {
   event.preventDefault();
   const elementName = event.target.name;
   const value = event.target.value;
-
+  
   if (elementName === 'name'){
     userData.name = value;
   }
@@ -86,7 +86,5 @@ fillForm.addEventListener('input', (event) => {
   if (elementName === 'github'){
     userData.github = value;
   }
-
-  updatePreview();
 });
 
