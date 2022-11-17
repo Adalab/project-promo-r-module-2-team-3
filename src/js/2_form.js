@@ -5,7 +5,7 @@
 
 let userData = {
   palette: '1',
-  name : 'hola',
+  name : '',
   job : '',
   photo : '',
   email : '',
@@ -13,21 +13,18 @@ let userData = {
   linkedin : '',
   github : '',
 };
-console.log(`dato ${userData.name}`);
 
 function updatePreview() {
   if (userData.name === '') {
     inputCardName.innerHTML = `Nombre Apellido`;
   } else {
     inputCardName.innerHTML = userData.name;
-    console.log(`dato2 ${userData.name}`);  
   }
   
   if (userData.job === '') {
     inputCardJob.innerHTML = `Front-End developer`;
   } else {
     inputCardJob.innerHTML = userData.job;
-    console.log(`dato3 ${userData.job}`);
   }
   
   if(userData.photo === '') {
