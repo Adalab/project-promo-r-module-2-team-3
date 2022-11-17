@@ -16,6 +16,7 @@ const shareClick = document.querySelector(".js-shareClick");
 // Seccion formulario rellena
 const resetBtn = document.querySelector(".js_reset-btn");
 const inputReset = document.querySelectorAll(".js_inputReset");
+const smallText = document.querySelectorAll('.js-small-text');
 
 // Seccion diseña
 const cardArticle = document.querySelector(".js_card_article");

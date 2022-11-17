@@ -75,10 +75,22 @@ fillForm.addEventListener('input', (event) => {
     userData.photo = value;
   }
   if (elementName === 'phone'){
-    userData.phone = value;
+    const regExPhone = /[6-9]{1}[0-9]{8}/;
+    if (regExPhone.test(value) || ''){
+      userData.phone = value;
+      smallText[1].innerHTML = '';
+    } else {
+      smallText[1].innerHTML = 'El teléfono que has introducido no es correcto.';
+    }
   }
   if (elementName === 'email'){
-    userData.email = value;
+    const regExEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+    if (regExEmail.test(value) || ''){
+      userData.email = value;
+      smallText[0].innerHTML = '';
+    } else {
+      smallText[0].innerHTML = 'El email que has introducido no es correcto';
+    }
   }
   if (elementName === 'linkedin'){
     userData.linkedin = value;
@@ -89,4 +101,3 @@ fillForm.addEventListener('input', (event) => {
 
   updatePreview();
 });
-

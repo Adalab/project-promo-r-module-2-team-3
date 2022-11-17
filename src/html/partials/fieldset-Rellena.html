@@ -25,11 +25,13 @@
 
         <label for="email" class="fill__infoLabel">Email</label>
         <input type="email" id="email" name="email" class="fill__infoInput js_input_email js_inputReset"
-            placeholder="ejemplo@dominio.tld" required autocomplete="email">
+            placeholder="ejemplo@dominio.tld" autocomplete="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+        <small class="fill__small js-small-text"></small>
 
         <label for="phone" class="fill__infoLabel">Teléfono</label>
         <input type="tel" id="phone" name="phone" class="fill__infoInput js_input_phone js_inputReset" placeholder="XXXXXXXXX"
-            autocomplete="tel">
+            autocomplete="tel" required pattern="[6-9]{1}[0-9]{8}">
+        <small class="fill__small js-small-text"></small>
 
         <label for="linkedin" class="fill__infoLabel">Linkedin</label>
         <input type="text" id="linkedin" name="linkedin" class="fill__infoInput js_input_linkedin js_inputReset" placeholder="usuario"

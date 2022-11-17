@@ -28,6 +28,10 @@
   justify-content: center;
   align-items: left;
   margin: 0px 20px 10px 20px;
+  &__small{
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
   &__infoLabel {
     color: $title-card-icons;
     font-size: rem(14);
