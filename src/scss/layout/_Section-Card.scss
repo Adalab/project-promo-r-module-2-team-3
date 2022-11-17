@@ -50,7 +50,7 @@
       }
     }
     &--photo {
-      background: url(https://simbei.com/wp-content/uploads/2016/09/simbei_escaparate_farmacia_vueltalcole_1.jpg);
+      background-image: url("https://i.pinimg.com/564x/24/cf/db/24cfdb5d60555f096183a49405c1e49e.jpg");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -76,46 +76,48 @@
 .palette1 {
   .name {
     color: $title-card-icons;
-  };
+  }
   .header-card {
     color: $start-button;
-  };
-  .icon{
+  }
+  .icon {
     color: $title-card-icons;
     border-color: $border-icon;
-  };
+  }
 }
 
 .palette2 {
   .name {
     color: $color-palette-blood;
-  };
+  }
   .header-card {
     color: $color-palette-red;
-  };
-  .icon{
+  }
+  .icon {
     border-color: $title-icons;
     color: $color-palette-blood;
-  };
+  }
 }
 
 .palette3 {
-  .name {color: $color-palette-slate;
-  };
-  .header-card {color: $color-palette--orange;
-  };
-  .icon{
-    border-color:$color-palette--blue;
+  .name {
     color: $color-palette-slate;
-  };
+  }
+  .header-card {
+    color: $color-palette--orange;
+  }
+  .icon {
+    border-color: $color-palette--blue;
+    color: $color-palette-slate;
+  }
 }
 
-.card__button:hover{
+.card__button:hover {
   background-color: $start-button;
   color: $footer-bg-color;
   cursor: pointer;
 }
 
-.icon:hover{
+.icon:hover {
   border: solid 2px $title-card-icons;
 }
