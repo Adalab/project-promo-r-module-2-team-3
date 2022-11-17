@@ -21,23 +21,23 @@ function printFromLocal() {
     palette1Radius.checked = false;
     palette2Radius.checked = true;
     palette3Radius.checked = false;
-    cardArticle.classList.add('palette-2');
-    cardArticle.classList.remove('palette-1');
-    cardArticle.classList.remove('palette-3');
+    cardArticle.classList.add('palette2');
+    cardArticle.classList.remove('palette1');
+    cardArticle.classList.remove('palette3');
   } else if (userData.palette === '3') {
     palette1Radius.checked = false;
     palette2Radius.checked = false;
     palette3Radius.checked = true;
-    cardArticle.classList.add('palette-3');
-    cardArticle.classList.remove('palette-1');
-    cardArticle.classList.remove('palette-2');
+    cardArticle.classList.add('palette3');
+    cardArticle.classList.remove('palette1');
+    cardArticle.classList.remove('palette2');
   } else {
     palette1Radius.checked = true;
     palette2Radius.checked = false;
     palette3Radius.checked = false;
-    cardArticle.classList.add('palette-1');
-    cardArticle.classList.remove('palette-2');
-    cardArticle.classList.remove('palette-3');
+    cardArticle.classList.add('palette1');
+    cardArticle.classList.remove('palette2');
+    cardArticle.classList.remove('palette3');
   }
 
   inputName.value = userData.name;
