@@ -86,5 +86,6 @@ fillForm.addEventListener('input', (event) => {
   if (elementName === 'github'){
     userData.github = value;
   }
+  updatePreview();
 });
 

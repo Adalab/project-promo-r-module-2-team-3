@@ -13,14 +13,15 @@
   text-align: center;
 
   &__title {
-    color: $button-link;
+    color: #1b1b69;
+    -webkit-text-stroke: 0.5px #cf9949;
     font-family: $font-Merri;
     font-weight: 900;
     font-size: rem(19.2);
     margin: 0 49.3px 6px 47.7px;
     width: rem(223);
     &--text {
-      color: $title-card-icons;
+      color: #1b1b69;
       font-size: rem(12.8);
       font-weight: bolder;
       margin: 0px 28px 17.8px 27.2px;
@@ -37,7 +38,7 @@
 }
 .Section2 {
   border: solid 1.6px rgba(225, 115, 52, 0.21);
-  width:268px;
+  width: 268px;
   border-radius: 4px;
   margin-bottom: 38.6px;
 }
@@ -112,7 +113,7 @@
     height: 86px;
     margin-bottom: 90px;
   }
- .List {
+  .List {
     font-size: rem(16);
   }
   .Element4,
@@ -129,25 +130,25 @@ body {
   height: 100vh;
 }
 
-.btn:hover{
+.btn:hover {
   transition: all 0.8s ease-in-out;
   background-image: linear-gradient(
     to right,
-    #E96D34,
-    #E97934,
-    #F0CC89,
-    #F68435,
+    #e96d34,
+    #e97934,
+    #f0cc89,
+    #f68435
   );
   box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
   background-size: 300% 100%;
   cursor: pointer;
-  }
+}
 
-  .btn:hover:hover {
-    background-position: 100% 0;
-    transition: all 0.8s ease-in-out;
-  }
+.btn:hover:hover {
+  background-position: 100% 0;
+  transition: all 0.8s ease-in-out;
+}
 
-  .btn:hover:focus {
-    outline: none;
-  }
+.btn:hover:focus {
+  outline: none;
+}
