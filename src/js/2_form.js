@@ -3,7 +3,7 @@
 /* eslint-disable no-undef */
 'use strict';
 
-const userData = {
+let userData = {
   palette: '1',
   name : '',
   job : '',
@@ -58,8 +58,6 @@ function updatePreview() {
   }
 };
 
-
-
 fillForm.addEventListener('input', (event) => {
   event.preventDefault();
   const elementName = event.target.name;
@@ -75,20 +73,20 @@ fillForm.addEventListener('input', (event) => {
     userData.photo = value;
   }
   if (elementName === 'phone'){
-    const regExPhone = /[6-9]{1}[0-9]{8}/;
+    const regExPhone = /[6-9]{1}[0-9]{8}/; //Se añade una comprobación para que vea si el valor del teléfono cumple con la expresión regular dada
     if (regExPhone.test(value) || ''){
       userData.phone = value;
       smallText[1].innerHTML = '';
-    } else {
+    } else { //Si el valor no cumple con la expresión regular es visible el siguiente mensaje
       smallText[1].innerHTML = 'El teléfono que has introducido no es correcto.';
     }
   }
   if (elementName === 'email'){
-    const regExEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+    const regExEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/; //Se añade una comprobación para que vea si el valor del email cumple con la expresión regular dada
     if (regExEmail.test(value) || ''){
       userData.email = value;
       smallText[0].innerHTML = '';
-    } else {
+    } else { //Si el valor no cumple con la expresión regular es visible el siguiente mensaje
       smallText[0].innerHTML = 'El email que has introducido no es correcto';
     }
   }
@@ -100,4 +98,5 @@ fillForm.addEventListener('input', (event) => {
   }
 
   updatePreview();
+  saveData();
 });

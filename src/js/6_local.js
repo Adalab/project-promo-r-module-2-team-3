@@ -5,12 +5,62 @@
 /* eslint-disable no-undef */
 /* eslint-disable strict */
 
-//const linkshare = document.querySelector('.js-shareUrl');
-
 `use strict`;
 
 let cardUrl;
 
+// Función que recoge los datos de userData y los convierte en un objeto que guarda en el Local Storage
+function saveData() {
+  localStorage.setItem('dataFromForm', JSON.stringify(userData));
+}
+
+// Función que pinta los datos del LocalStorage en los inputs del formulario
+function printFromLocal() {
+  userData = JSON.parse(localStorage.getItem('dataFromForm'));
+  if (userData.palette === '2') {
+    palette1Radius.checked = false;
+    palette2Radius.checked = true;
+    palette3Radius.checked = false;
+    cardArticle.classList.add('palette-2');
+    cardArticle.classList.remove('palette-1');
+    cardArticle.classList.remove('palette-3');
+  } else if (userData.palette === '3') {
+    palette1Radius.checked = false;
+    palette2Radius.checked = false;
+    palette3Radius.checked = true;
+    cardArticle.classList.add('palette-3');
+    cardArticle.classList.remove('palette-1');
+    cardArticle.classList.remove('palette-2');
+  } else {
+    palette1Radius.checked = true;
+    palette2Radius.checked = false;
+    palette3Radius.checked = false;
+    cardArticle.classList.add('palette-1');
+    cardArticle.classList.remove('palette-2');
+    cardArticle.classList.remove('palette-3');
+  }
+
+  inputName.value = userData.name;
+  inputJob.value = userData.job;
+  if (userData.photo) {
+    profileImage.style.backgroundImage = `url(${userData.photo})`;
+    profilePreview.style.backgroundImage = `url(${userData.photo})`;
+  }
+  inputPhone.value = userData.phone;
+  inputEmail.value = userData.email;
+  inputLinkedin.value = userData.linkedin;
+  inputGithub.value = userData.github;
+
+  // Función que pinta lo que tenga data en la tarjeta preview
+  updatePreview();
+}
+
+//Si el localStorage está relleno, ejecuta printFromLocal() y si no hacemos el fetch
+if (JSON.parse(localStorage.getItem('dataFromForm'))) {
+  printFromLocal();
+}
+
+//Fetch que recoge los datos del objeto userData, lo envía a la API y genera la tarjeta y el enlace
 function localCard(){
  
     fetch('https://awesome-profile-cards.herokuapp.com/card', {

@@ -24,7 +24,6 @@ arrowShare.classList.add("arrowRotate");
 
 //addEventListener
 
-
 designClick.addEventListener("click", () => {
   unfold(arrowDesign, mainDesign);
   cardCreated.style = 'display: none';

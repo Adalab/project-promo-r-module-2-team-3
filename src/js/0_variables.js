@@ -17,6 +17,13 @@ const shareClick = document.querySelector(".js-shareClick");
 const resetBtn = document.querySelector(".js_reset-btn");
 const inputReset = document.querySelectorAll(".js_inputReset");
 const smallText = document.querySelectorAll('.js-small-text');
+const inputName = document.querySelector('.js_input_name');
+const inputJob = document.querySelector('.js_input_job');
+const inputImg = document.querySelector('.js_input_img');
+const inputEmail = document.querySelector('.js_input_email');
+const inputPhone = document.querySelector('.js_input_phone');
+const inputLinkedin = document.querySelector('.js_input_linkedin');
+const inputGithub = document.querySelector('.js_input_github');
 
 // Seccion diseña
 const cardArticle = document.querySelector(".js_card_article");
