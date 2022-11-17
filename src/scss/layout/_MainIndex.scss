@@ -1,5 +1,4 @@
 .principal {
-  //background-image: url("../images/nen.png");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +13,6 @@
 
   &__title {
     color: white;
-    text-decoration: underline overline rgb(211, 139, 6);
     font-family: $font-Merri;
     font-weight: 900;
     font-size: rem(19.2);
@@ -23,7 +21,7 @@
     padding-bottom: 10px;
 
     &--text {
-      color: black;
+      color: white;
       font-size: rem(12.8);
       font-weight: bolder;
       margin: 0px 28px 17.8px 27.2px;
@@ -39,7 +37,7 @@
   }
 }
 .Section2 {
-  border: solid 5px rgba(2, 2, 2, 0.808);
+  border: solid 5px white;
   width: 268px;
   border-radius: 4px;
   margin-bottom: 38.6px;
@@ -49,8 +47,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   text-align: center;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: transparent;
   font-size: rem(12.8);
 }
 

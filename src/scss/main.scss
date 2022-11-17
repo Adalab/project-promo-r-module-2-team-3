@@ -22,15 +22,12 @@
 }
 
 .body {
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  position: fixed;
-  background-image: url('https://external-preview.redd.it/Tf2MC-orVRAI8OL5tjyF4k4H2Q6QLHTWllekGfqdt3c.png?width=960&crop=smart&auto=webp&s=be4ab9a2fa3ca2f7011799377f118a8dbc64aacb');
-  background-size: 2000px;
+  background-image: url('../images/background-main-copy.png');
   background-repeat: no-repeat;
-
+  background-size: cover;
 }
 
 .mainCreate {

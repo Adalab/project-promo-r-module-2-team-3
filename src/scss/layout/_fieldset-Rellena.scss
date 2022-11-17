@@ -18,7 +18,7 @@
   }
 }
 .fa-regular {
-  color: rgba(12, 12, 12, 0.808);
+  color: rgba(177, 8, 8, 0.808);
   margin-right: 5px;
 }
 .fill {
@@ -51,7 +51,7 @@
     display: flex;
     gap: 30px;
     &--labelInput {
-      background-color: $button-link;
+      background-color:  rgba(177, 8, 8, 0.808);
       padding: 7px 20px;
       border-radius: 3px;
       color: $main-bg-color;

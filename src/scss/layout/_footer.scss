@@ -1,5 +1,7 @@
 .footer {
   background-color: $footer-bg-color;
+  bottom: 0;
+  position: fixed;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -16,8 +18,8 @@
   &__small {
     font-family: $font-Open;
     font-size: 14px;
-    color: rgb(238, 166, 12);
-    margin-bottom: 1rem;
+    color: rgba(177, 8, 8, 0.808);
+    font-weight: 700;
     @include tablet {
       margin-bottom: 0;
     }

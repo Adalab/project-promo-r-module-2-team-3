@@ -1,16 +1,41 @@
 .card {
-  background-image: linear-gradient(
-    to bottom,
-    $bg-image-color,
-    $bg-image-color-2
-  );
+  background: linear-gradient(-45deg, #032c18, #0b4d22, #720404, #460903);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+    
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   &__button {
-    background: none;
-    border: solid 1px $footer-bg-color;
-    color: $text;
+    background: linear-gradient(-45deg, #460903, #720404,#0b4d22, #032c18);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+    
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+    border: solid 2px white;
+    color: white;
     margin: 38px 0 20px 0;
     font-size: rem(12);
     line-height: rem(20);
@@ -110,12 +135,6 @@
     border-color: $color-palette--blue;
     color: $color-palette-slate;
   }
-}
-
-.card__button:hover {
-  background-color: $start-button;
-  color: $footer-bg-color;
-  cursor: pointer;
 }
 
 .icon:hover {
