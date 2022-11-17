@@ -14,12 +14,13 @@
 
   &__title {
     color: white;
-    -webkit-text-stroke: 0.5px black;
+    text-decoration: underline overline rgb(211, 139, 6);
     font-family: $font-Merri;
     font-weight: 900;
     font-size: rem(19.2);
     margin: 0 49.3px 6px 47.7px;
     width: rem(223);
+    padding-bottom: 10px;
 
     &--text {
       color: black;
@@ -38,7 +39,7 @@
   }
 }
 .Section2 {
-  border: solid 1.6px rgba(177, 8, 8, 0.808);
+  border: solid 5px rgba(2, 2, 2, 0.808);
   width: 268px;
   border-radius: 4px;
   margin-bottom: 38.6px;
@@ -48,7 +49,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   text-align: center;
-  color: white;
+  color: black;
+  background-color: white;
   font-size: rem(12.8);
 }
 

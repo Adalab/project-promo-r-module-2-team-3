@@ -18,7 +18,7 @@
   }
 }
 .fa-regular {
-  color: rgba(177, 8, 8, 0.808);
+  color: rgba(12, 12, 12, 0.808);
   margin-right: 5px;
 }
 .fill {
@@ -28,7 +28,7 @@
   justify-content: center;
   align-items: left;
   margin: 0px 20px 10px 20px;
-  &__small{
+  &__small {
     font-size: 10px;
     margin-bottom: 15px;
   }
@@ -74,6 +74,6 @@
 }
 
 fieldset {
-  border-bottom: solid 1px $border-color;
+  border-bottom: solid 1px rgb(3, 58, 3);
   margin: 0 20px 0 20px;
 }
