@@ -1,5 +1,8 @@
 .headerCreate {
-  background-color: $footer-bg-color;
+  background-image: linear-gradient(
+    to bottom,
+    #e9e9e9 7%,
+    #fafafa, );
   display: flex;
   justify-content: center;
   align-items: center;

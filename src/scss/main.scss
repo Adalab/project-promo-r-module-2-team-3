@@ -39,9 +39,12 @@
 .mainCreate {
   background-image: linear-gradient(
     to bottom,
-    $main-bg-color,
-    $footer-bg-color 9%
+    #fafafa,
+    #cacaca 7%,
+    #fafafa 97%,
   );
+  
+
 
   @media all and (min-width: 768px) {
     display: grid;
