@@ -38,7 +38,6 @@ function handleClickReset(event) {
 
   //Por último, limpiamos el localStorage y actualizamos la previsualización de la tarjeta
   localStorage.clear();
-  updatePreview();
 }
 
 //Función para deseleccionar todas las paletas

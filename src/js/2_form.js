@@ -57,7 +57,6 @@ function updatePreview() {
     inputCardGithub.href = `https://www.github.com/${userData.github}`;
   }
   
-
 };
 
 fillForm.addEventListener('input', (event) => {
