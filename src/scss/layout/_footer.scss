@@ -2,14 +2,13 @@
   background-color: $footer-bg-color;
   bottom: 0;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: rem(18) rem(61) rem(20) rem(61);
+  padding: 10px 0px 10px 0px;
   border-top: 1px solid $border-color;
-  height: 8vh;
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
@@ -25,6 +24,7 @@
     }
   }
   &__img {
+    margin-top: 5px;
     max-width: rem(103);
     max-height: rem(40);
   }
